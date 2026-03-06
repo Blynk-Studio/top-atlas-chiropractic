@@ -48,7 +48,7 @@ export function HeroSection() {
       className="relative min-h-screen flex items-center overflow-hidden bg-[#1B3A2E]"
     >
       {/* Subtle hero background image */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-[0.18]">
         <Image src="/images/hero.jpg" alt="Top Atlas Chiropractic clinic" fill className="object-cover" priority />
       </div>
 
