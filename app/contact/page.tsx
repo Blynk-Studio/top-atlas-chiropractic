@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { AIWidgetPanel } from "@/components/AIWidgetPanel";
 import { ContactForm } from "@/components/ContactForm";
 
@@ -13,11 +12,14 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-[#1B3A2E] pt-32 pb-20 sm:pb-28 overflow-hidden">
-        <div className="absolute inset-0">
-          <Image src="/images/contact-header.jpg" alt="" fill className="object-cover object-center" priority sizes="100vw" />
-          <div className="absolute inset-0 bg-[#1B3A2E]/80" />
-        </div>
+      <section
+        className="relative bg-[#1B3A2E] pt-32 pb-20 sm:pb-28 overflow-hidden"
+        style={{
+          backgroundImage: 'linear-gradient(rgba(27,58,46,0.80),rgba(27,58,46,0.80)),url(/images/contact-header.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
         <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
           <p className="text-xs tracking-[0.1em] sm:tracking-[0.2em] uppercase text-[#C4813A] mb-4">
             Get in Touch

@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { SpineAlignment } from "@/components/SpineAlignment";
 
@@ -46,11 +45,12 @@ export function HeroSection() {
     <section
       ref={containerRef}
       className="relative min-h-screen flex items-center overflow-hidden bg-[#1B3A2E]"
+      style={{
+        backgroundImage: 'linear-gradient(rgba(27,58,46,0.82),rgba(27,58,46,0.82)),url(/images/hero.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
     >
-      {/* Subtle hero background image */}
-      <div className="absolute inset-0 opacity-[0.18]">
-        <Image src="/images/hero.jpg" alt="Top Atlas Chiropractic clinic" fill className="object-cover" priority />
-      </div>
 
       {/* Ring motif overlay */}
       <div className="hero-ring absolute inset-0 flex items-center justify-center pointer-events-none">
