@@ -1,6 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
-import { AtlasVisual } from "@/components/AtlasVisual";
+import { AtlasEasterEgg } from "@/components/AtlasEasterEgg";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -75,8 +74,8 @@ export default function NuccaPage() {
                 </p>
               </div>
             </div>
-            <div>
-              <AtlasVisual />
+            <div className="flex items-center justify-center">
+              <AtlasEasterEgg />
             </div>
           </div>
         </div>

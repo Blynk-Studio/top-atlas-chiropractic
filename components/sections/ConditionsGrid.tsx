@@ -106,7 +106,7 @@ export function ConditionsGrid() {
             <Link
               key={condition.name}
               href="/conditions"
-              className="group relative flex flex-col items-center gap-3 rounded-2xl bg-white p-6 sm:p-8 text-center transition-all duration-500 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#C4813A]/10"
+              className="group relative flex flex-col items-center gap-3 rounded-2xl bg-white p-6 sm:p-8 text-center transition-all duration-500 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#C4813A]/10 border-l-2 border-l-transparent hover:border-l-[#C4813A]"
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#2A5441]/5 text-[#2A5441] transition-all duration-500 group-hover:bg-[#C4813A]/10 group-hover:text-[#C4813A] group-hover:scale-110">
                 {condition.icon}
