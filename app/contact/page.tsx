@@ -68,7 +68,7 @@ export default function ContactPage() {
               <h3 className="font-[var(--font-cormorant)] text-lg font-medium text-[#1C2B24] mb-1">Email</h3>
               <a
                 href="mailto:drshelley@topatlaschiropractic.com"
-                className="text-sm text-[#C4813A] hover:text-[#E8A85A] transition-colors"
+                className="text-sm text-[#C4813A] hover:text-[#E8A85A] transition-colors break-all"
               >
                 drshelley@topatlaschiropractic.com
               </a>
