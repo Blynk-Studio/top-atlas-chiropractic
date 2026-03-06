@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  --color-forest: #2A5441;
+  --color-forest-dark: #1B3A2E;
+  --color-ivory: #FAF7F0;
+  --color-ivory-warm: #F2EDE2;
+  --color-copper: #C4813A;
+  --color-copper-light: #E8A85A;
+  --color-sage: #7A9E8E;
+  --color-text: #1C2B24;
+  --color-text-muted: #6B7A70;
+  --color-white: #FFFFFF;
+}
+
+@theme inline {
+  --color-forest: var(--color-forest);
+  --color-forest-dark: var(--color-forest-dark);
+  --color-ivory: var(--color-ivory);
+  --color-ivory-warm: var(--color-ivory-warm);
+  --color-copper: var(--color-copper);
+  --color-copper-light: var(--color-copper-light);
+  --color-sage: var(--color-sage);
+  --color-text: var(--color-text);
+  --color-text-muted: var(--color-text-muted);
+  --font-display: var(--font-cormorant);
+  --font-body: var(--font-inter);
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+body {
+  background: var(--color-ivory);
+  color: var(--color-text);
+  font-family: var(--font-body), sans-serif;
+}
+
+@media (pointer: fine) {
+  html, body {
+    cursor: none;
+  }
+  a, button, [role="button"], input, textarea, select, label {
+    cursor: none;
+  }
+}
+
+@media (pointer: coarse) {
+  html, body {
+    cursor: auto;
+  }
+}
+
+/* Smooth scroll target offset for fixed navbar */
+html {
+  scroll-padding-top: 5rem;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(196, 129, 58, 0.3);
+  color: var(--color-text);
+}
+
+/* Oversized text background utility */
+.text-bg-oversized {
+  font-size: clamp(80px, 15vw, 200px);
+  line-height: 0.85;
+  font-weight: 300;
+  opacity: 0.04;
+  pointer-events: none;
+  user-select: none;
+}
