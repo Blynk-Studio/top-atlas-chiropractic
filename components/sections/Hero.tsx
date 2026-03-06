@@ -44,7 +44,7 @@ export function HeroSection() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-screen flex items-center overflow-hidden bg-[#1B3A2E]"
+      className="relative min-h-screen flex items-center overflow-hidden bg-[#1B3A2E] hero-bg-fade"
       style={{
         backgroundImage: 'linear-gradient(rgba(27,58,46,0.82),rgba(27,58,46,0.82)),url(/images/hero.jpg)',
         backgroundSize: 'cover',

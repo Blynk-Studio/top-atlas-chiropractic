@@ -13,7 +13,7 @@ export default function ContactPage() {
     <>
       {/* Hero */}
       <section
-        className="relative bg-[#1B3A2E] pt-32 pb-20 sm:pb-28 overflow-hidden"
+        className="relative bg-[#1B3A2E] pt-32 pb-20 sm:pb-28 overflow-hidden hero-bg-fade"
         style={{
           backgroundImage: 'linear-gradient(rgba(27,58,46,0.80),rgba(27,58,46,0.80)),url(/images/contact-header.jpg)',
           backgroundSize: 'cover',
