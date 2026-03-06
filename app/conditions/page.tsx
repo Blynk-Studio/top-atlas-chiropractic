@@ -80,7 +80,7 @@ export default function ConditionsPage() {
       {/* Hero */}
       <section className="relative bg-[#1B3A2E] pt-32 pb-20 sm:pb-28 overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/images/conditions-header.jpg" alt="" fill className="object-cover object-center" priority />
+          <Image src="/images/conditions-header.jpg" alt="" fill className="object-cover object-center" priority sizes="100vw" />
           <div className="absolute inset-0 bg-[#1B3A2E]/82" />
         </div>
         <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">

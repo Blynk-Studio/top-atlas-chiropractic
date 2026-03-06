@@ -42,7 +42,7 @@ export default function NuccaPage() {
       {/* Hero */}
       <section className="relative bg-[#1B3A2E] pt-32 pb-20 sm:pb-28 overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/images/nucca-header.jpg" alt="" fill className="object-cover object-center" priority />
+          <Image src="/images/nucca-header.jpg" alt="" fill className="object-cover object-center" priority sizes="100vw" />
           <div className="absolute inset-0 bg-[#1B3A2E]/80" />
         </div>
         <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
@@ -143,7 +143,7 @@ export default function NuccaPage() {
       <section className="bg-[#FAF7F0] py-16 sm:py-20" data-animate>
         <div className="mx-auto max-w-6xl px-6">
           <div className="relative rounded-3xl overflow-hidden aspect-[21/9]">
-            <Image src="/images/dr-shelley-adjusting.jpg" alt="Dr. Shelley performing a NUCCA atlas adjustment" fill className="object-cover object-top" />
+            <Image src="/images/dr-shelley-adjusting.jpg" alt="Dr. Shelley performing a NUCCA atlas adjustment" fill className="object-cover object-top" priority sizes="100vw" />
             <div className="absolute inset-0 bg-gradient-to-r from-[#1B3A2E]/70 via-transparent to-transparent" />
             <div className="absolute inset-0 flex items-center px-10 sm:px-16">
               <p className="font-[var(--font-cormorant)] text-2xl sm:text-4xl font-light text-white max-w-sm leading-tight">

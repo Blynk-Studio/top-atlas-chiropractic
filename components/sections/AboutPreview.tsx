@@ -17,6 +17,7 @@ export function AboutPreview() {
               src="/images/dr-shelley-clinic.jpg"
               alt="Dr. Shelley Lorenzen, NUCCA chiropractor in Austin TX"
               fill
+              priority
               className="object-cover"
               style={{ objectPosition: "center 20%" }}
               sizes="(max-width: 768px) 100vw, 50vw"
