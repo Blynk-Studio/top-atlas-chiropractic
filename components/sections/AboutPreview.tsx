@@ -14,7 +14,7 @@ export function AboutPreview() {
           {/* Image */}
           <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-[#2A5441]/10">
             <Image
-              src="/images/dr-shelley-about.jpg"
+              src="/images/dr-shelley-clinic.jpg"
               alt="Dr. Shelley Lorenzen, NUCCA chiropractor in Austin TX"
               fill
               className="object-cover"

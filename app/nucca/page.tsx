@@ -139,6 +139,21 @@ export default function NuccaPage() {
         </div>
       </section>
 
+      {/* Adjustment image feature */}
+      <section className="bg-[#FAF7F0] py-16 sm:py-20" data-animate>
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="relative rounded-3xl overflow-hidden aspect-[21/9]">
+            <Image src="/images/dr-shelley-adjusting.jpg" alt="Dr. Shelley performing a NUCCA atlas adjustment" fill className="object-cover object-top" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#1B3A2E]/70 via-transparent to-transparent" />
+            <div className="absolute inset-0 flex items-center px-10 sm:px-16">
+              <p className="font-[var(--font-cormorant)] text-2xl sm:text-4xl font-light text-white max-w-sm leading-tight">
+                Gentle. Precise.<br />Life-changing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* What Does an Adjustment Feel Like */}
       <section className="bg-[#1B3A2E] py-20 sm:py-28" data-animate>
         <div className="mx-auto max-w-3xl px-6">

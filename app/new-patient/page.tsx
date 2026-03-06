@@ -37,7 +37,7 @@ export default function NewPatientPage() {
       {/* Hero */}
       <section className="relative bg-[#1B3A2E] pt-32 pb-20 sm:pb-28 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <Image src="/images/consultation.jpg" alt="" fill className="object-cover" />
+          <Image src="/images/dr-shelley-xray.jpg" alt="" fill className="object-cover" />
         </div>
         <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
           <p className="text-xs tracking-[0.1em] sm:tracking-[0.2em] uppercase text-[#C4813A] mb-4">

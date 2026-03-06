@@ -29,7 +29,7 @@ export default function AboutPage() {
             </div>
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden">
               <Image
-                src="/images/dr-shelley-about.jpg"
+                src="/images/dr-shelley-clinic.jpg"
                 alt="Dr. Shelley Lorenzen portrait"
                 fill
                 className="object-cover"
@@ -97,7 +97,7 @@ export default function AboutPage() {
             </div>
             <div className="relative aspect-square rounded-2xl overflow-hidden bg-[#2A5441]/10">
               <Image
-                src="/images/austin-outdoor.jpg"
+                src="/images/dr-shelley-outdoor.jpg"
                 alt="Austin Texas trails and outdoor lifestyle"
                 fill
                 className="object-cover"
