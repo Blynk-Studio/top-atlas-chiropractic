@@ -12,7 +12,7 @@ interface AIWidgetPanelProps {
 }
 
 export function AIWidgetPanel({ variant = "floating" }: AIWidgetPanelProps) {
-  const [activeTab, setActiveTab] = useState<"chat" | "voice">("chat");
+  const [activeTab, setActiveTab] = useState<"chat" | "voice">("voice");
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "agent",
@@ -25,6 +25,7 @@ export function AIWidgetPanel({ variant = "floating" }: AIWidgetPanelProps) {
   const [chatId, setChatId] = useState<string | null>(null);
   const [isCallActive, setIsCallActive] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const retellClientRef = useRef<{ stopCall: () => void } | null>(null);
 
   const scrollToBottom = useCallback(() => {
     if (messages.length > 1) {
@@ -109,11 +110,12 @@ export function AIWidgetPanel({ variant = "floating" }: AIWidgetPanelProps) {
       const data = await res.json();
 
       if (data.access_token) {
+        retellClientRef.current = client;
         await client.startCall({ accessToken: data.access_token });
         setIsCallActive(true);
 
-        client.on("call_ended", () => setIsCallActive(false));
-        client.on("error", () => setIsCallActive(false));
+        client.on("call_ended", () => { setIsCallActive(false); retellClientRef.current = null; });
+        client.on("error", () => { setIsCallActive(false); retellClientRef.current = null; });
       }
     } catch {
       setIsCallActive(false);
@@ -255,7 +257,7 @@ export function AIWidgetPanel({ variant = "floating" }: AIWidgetPanelProps) {
               : "Have a conversation about NUCCA care, your symptoms, or what to expect at your first visit."}
           </p>
           <button
-            onClick={isCallActive ? () => setIsCallActive(false) : startVoiceCall}
+            onClick={isCallActive ? () => { retellClientRef.current?.stopCall(); setIsCallActive(false); retellClientRef.current = null; } : startVoiceCall}
             className={`rounded-full px-8 py-3 text-sm font-medium transition-all ${
               isCallActive
                 ? "bg-red-500 text-white hover:bg-red-600"
