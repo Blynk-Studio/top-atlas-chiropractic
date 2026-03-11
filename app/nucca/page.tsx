@@ -48,16 +48,16 @@ export default function NuccaPage() {
           backgroundPosition: 'center',
         }}
       >
-        <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
-          <p className="text-xs tracking-[0.1em] sm:tracking-[0.2em] uppercase text-[#C4813A] mb-4">
+        <div className="site-shell relative z-10 text-center">
+          <p className="section-eyebrow mb-4">
             The NUCCA Technique
           </p>
-          <h1 className="font-[var(--font-cormorant)] text-[clamp(2rem,6vw,4.5rem)] font-light text-white leading-tight mb-6">
+          <h1 className="mx-auto mb-6 max-w-4xl font-[var(--font-cormorant)] text-[clamp(2.25rem,6vw,4.5rem)] font-light leading-[1.02] text-white">
             One Bone. One Correction.<br />
             Everything Changes.
           </h1>
-          <p className="mx-auto max-w-xl text-white/60 leading-relaxed">
-            NUCCA stands for National Upper Cervical Chiropractic Association. It's the most specialized chiropractic technique in existence, focused entirely on the atlas vertebra, the C1, the ring-shaped bone where your skull meets your spine.
+          <p className="copy-on-dark mx-auto">
+            {"NUCCA stands for National Upper Cervical Chiropractic Association. It's the most specialized chiropractic technique in existence, focused entirely on the atlas vertebra, the C1, the ring-shaped bone where your skull meets your spine."}
           </p>
         </div>
       </section>
@@ -72,14 +72,12 @@ export default function NuccaPage() {
               </h2>
               <div className="space-y-4 text-[#6B7A70] leading-relaxed text-left">
                 <p>
-                  The atlas (C1) is the topmost vertebra in your spine. It's a ring-shaped bone that supports the weight of your entire skull and protects the brainstem, the highway between your brain and body.
+                  {"The atlas (C1) is the topmost vertebra in your spine. It's a ring-shaped bone that supports the weight of your entire skull and protects the brainstem, the highway between your brain and body."}
                 </p>
                 <p>
                   When the atlas shifts even a fraction of a degree, it can compress the brainstem, distort nerve signals, and force your entire spine to compensate. Your body adapts: one shoulder drops, your hips tilt, muscles tighten. The symptoms that follow, headaches, vertigo, chronic pain, can seem unrelated to the neck.
                 </p>
-                <p>
-                  But they're not. They're all downstream of one misaligned bone.
-                </p>
+                <p>{"But they're not. They're all downstream of one misaligned bone."}</p>
               </div>
             </div>
             <div className="flex items-center justify-center">
@@ -100,7 +98,7 @@ export default function NuccaPage() {
               Why NUCCA is Different
             </h2>
             <p className="text-[#6B7A70] max-w-xl mx-auto">
-              This is not the chiropractic you're used to. Here's what sets NUCCA apart.
+              {"This is not the chiropractic you're used to. Here's what sets NUCCA apart."}
             </p>
           </div>
 
@@ -213,16 +211,16 @@ export default function NuccaPage() {
 
       {/* CTA */}
       <section className="bg-[#1B3A2E] py-20" data-animate>
-        <div className="mx-auto max-w-2xl px-6 text-center">
+        <div className="site-shell max-w-2xl text-center">
           <h2 className="font-[var(--font-cormorant)] text-3xl sm:text-4xl font-light text-white mb-4">
             Experience the NUCCA Difference
           </h2>
-          <p className="text-white/50 mb-8 text-sm sm:text-base">
+          <p className="copy-on-dark-sm mx-auto mb-8 max-w-xl">
             Your first visit includes comprehensive X-rays, atlas analysis, and your first precision adjustment. 90 minutes dedicated entirely to you.
           </p>
           <Link
             href="/new-patient"
-            className="inline-block w-full sm:w-auto rounded-full bg-[#C4813A] px-8 py-3.5 text-center text-sm font-medium text-white transition-all duration-300 hover:bg-[#E8A85A] hover:scale-105"
+            className="btn-primary w-full sm:w-auto"
           >
             Schedule Your First NUCCA Visit
           </Link>

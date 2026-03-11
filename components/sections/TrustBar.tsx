@@ -7,13 +7,13 @@ export function TrustBar() {
   ];
 
   return (
-    <section className="bg-[#F2EDE2] py-6 overflow-hidden" data-animate>
-      <div className="mx-auto max-w-7xl px-6">
+    <section className="overflow-hidden bg-[#F2EDE2] py-6" data-animate>
+      <div className="site-shell-wide">
         <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 sm:gap-x-12">
           {items.map((item, i) => (
             <div key={i} className="flex items-center gap-3">
               <div className="h-1.5 w-1.5 rounded-full bg-[#C4813A]" />
-              <span className="text-xs tracking-[0.1em] sm:tracking-[0.15em] uppercase text-[#6B7A70] font-medium whitespace-nowrap">
+              <span className="whitespace-nowrap text-xs font-medium uppercase tracking-[0.12em] text-[#51625a]">
                 {item}
               </span>
             </div>

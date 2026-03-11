@@ -13,18 +13,18 @@ export default function AboutPage() {
     <>
       {/* Hero */}
       <section className="relative bg-[#1B3A2E] pt-32 pb-20 sm:pb-28">
-        <div className="mx-auto max-w-6xl px-6">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="site-shell">
+          <div className="grid items-center gap-12 md:grid-cols-2">
             <div>
-              <p className="text-xs tracking-[0.1em] sm:tracking-[0.2em] uppercase text-[#C4813A] mb-4">
+              <p className="section-eyebrow mb-4">
                 About Dr. Shelley
               </p>
-              <h1 className="font-[var(--font-cormorant)] text-[clamp(2rem,5vw,4rem)] font-light text-white leading-tight mb-6">
+              <h1 className="mb-6 font-[var(--font-cormorant)] text-[clamp(2.25rem,5vw,4rem)] font-light leading-[1.02] text-white">
                 Small-Town Roots.<br />
                 World-Class Precision.
               </h1>
-              <p className="text-white/60 leading-relaxed text-left">
-                Dr. Shelley Lorenzen didn't choose NUCCA chiropractic. NUCCA chose her, at a conference in Chicago, in 2003, when she witnessed something that contradicted everything she'd been taught about the spine. That moment redirected her entire career.
+              <p className="copy-on-dark text-left">
+                {"Dr. Shelley Lorenzen didn't choose NUCCA chiropractic. NUCCA chose her, at a conference in Chicago, in 2003, when she witnessed something that contradicted everything she'd been taught about the spine. That moment redirected her entire career."}
               </p>
             </div>
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden">
@@ -54,16 +54,16 @@ export default function AboutPage() {
 
           <div className="space-y-8 text-[#6B7A70] leading-relaxed text-left">
             <p>
-              Shelley Lorenzen grew up in Colfax, Wisconsin, a town so small it has no stop signs, more cows than people, and exactly the kind of childhood that produces distance runners and people who don't quit. She was a three-sport athlete through high school: cross country, basketball, and track.
+              {"Shelley Lorenzen grew up in Colfax, Wisconsin, a town so small it has no stop signs, more cows than people, and exactly the kind of childhood that produces distance runners and people who don't quit. She was a three-sport athlete through high school: cross country, basketball, and track."}
             </p>
-            <p>
-              She studied biology at the University of Wisconsin-La Crosse, where the question shifted from "what does a body do?" to "what prevents it from doing what it should?" That question led her to Palmer College of Chiropractic in Davenport, Iowa, the birthplace of chiropractic itself.
-            </p>
+              <p>
+                {'She studied biology at the University of Wisconsin-La Crosse, where the question shifted from "what does a body do?" to "what prevents it from doing what it should?" That question led her to Palmer College of Chiropractic in Davenport, Iowa, the birthplace of chiropractic itself.'}
+              </p>
             <p>
               But the real turning point came in 2003, at a chiropractic conference in Chicago. A NUCCA practitioner demonstrated how a single, gentle correction to the atlas vertebra, the C1, the ring-shaped bone where the skull meets the spine, could realign the entire body. No cracking. No force. Just precision.
             </p>
             <p>
-              Dr. Shelley was hooked. She pursued advanced NUCCA certification and in 2006 moved to Austin, Texas, joining Back N Balance, where she spent the next 19 years mastering the technique. Thousands of patients. Thousands of X-rays. Every atlas is different, and she's seen them all.
+              {"Dr. Shelley was hooked. She pursued advanced NUCCA certification and in 2006 moved to Austin, Texas, joining Back N Balance, where she spent the next 19 years mastering the technique. Thousands of patients. Thousands of X-rays. Every atlas is different, and she's seen them all."}
             </p>
             <p>
               In 2025, she took the leap. Top Atlas Chiropractic was born: her own solo practice, her own vision, her own way. A place where every patient gets the time, attention, and precision they deserve.
@@ -85,13 +85,13 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-[#6B7A70] leading-relaxed text-left">
                 <p>
-                  Dr. Shelley has been a fitness instructor at The Lagree Studio in Austin for over seven years. She practices what she preaches: alignment isn't just spinal, it's how you move through life.
+                  {"Dr. Shelley has been a fitness instructor at The Lagree Studio in Austin for over seven years. She practices what she preaches: alignment isn't just spinal, it's how you move through life."}
                 </p>
                 <p>
-                  At home, you'll find her yellow lab Arjen (named, yes, after a Dutch footballer), 16 chickens with more personality than most people, and 3 ducks who answer to nobody.
+                  {"At home, you'll find her yellow lab Arjen (named, yes, after a Dutch footballer), 16 chickens with more personality than most people, and 3 ducks who answer to nobody."}
                 </p>
                 <p>
-                  She runs Austin's trails, teaches strength with precision, and spends her professional life keeping athletes performing, runners on the road, and everyday people out of pain. If your body has been telling you something is off but nobody can find it, Dr. Shelley might be the one who finally listens.
+                  {"She runs Austin's trails, teaches strength with precision, and spends her professional life keeping athletes performing, runners on the road, and everyday people out of pain. If your body has been telling you something is off but nobody can find it, Dr. Shelley might be the one who finally listens."}
                 </p>
               </div>
             </div>
@@ -111,18 +111,18 @@ export default function AboutPage() {
 
       {/* CTA */}
       <section className="bg-[#1B3A2E] py-20" data-animate>
-        <div className="mx-auto max-w-2xl px-6 text-center">
+        <div className="site-shell max-w-2xl text-center">
           <h2 className="font-[var(--font-cormorant)] text-3xl sm:text-4xl font-light text-white mb-4">
-            Ready to Meet Dr. Shelley?
+            {"Ready to Meet Dr. Shelley?"}
           </h2>
-          <p className="text-white/50 mb-8 text-sm sm:text-base">
+          <p className="copy-on-dark-sm mx-auto mb-8 max-w-xl">
             Your first visit is 90 minutes of focused, personalized care. X-rays, analysis, and your first gentle NUCCA adjustment.
           </p>
           <Link
             href="/new-patient"
-            className="inline-block w-full sm:w-auto rounded-full bg-[#C4813A] px-8 py-3.5 text-center text-sm font-medium text-white transition-all duration-300 hover:bg-[#E8A85A] hover:scale-105"
+            className="btn-primary w-full sm:w-auto"
           >
-            Schedule Your First Visit
+            Book Your First Visit
           </Link>
         </div>
       </section>

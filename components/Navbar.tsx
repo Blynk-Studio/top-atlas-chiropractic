@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useId, useState } from "react";
 import Link from "next/link";
 
 const NAV_LINKS = [
@@ -14,12 +14,29 @@ const NAV_LINKS = [
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const mobileMenuId = useId();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  useEffect(() => {
+    document.body.style.overflow = mobileOpen ? "hidden" : "";
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setMobileOpen(false);
+      }
+    };
+
+    window.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [mobileOpen]);
 
   return (
     <>
@@ -30,8 +47,11 @@ export function Navbar() {
             : "bg-transparent"
         }`}
       >
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <Link href="/" className="font-[var(--font-cormorant)] text-xl font-semibold tracking-wide text-white sm:text-2xl">
+        <nav className="site-shell-wide flex items-center justify-between py-4">
+          <Link
+            href="/"
+            className="flex min-h-11 max-w-[13rem] items-center font-[var(--font-cormorant)] text-xl font-semibold tracking-wide text-white sm:max-w-none sm:text-2xl"
+          >
             Top Atlas Chiropractic
           </Link>
 
@@ -41,14 +61,14 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm tracking-[0.15em] uppercase text-white/70 transition-all duration-200 hover:text-white hover:drop-shadow-[0_0_8px_rgba(196,129,58,0.5)]"
+                className="flex min-h-11 items-center py-2 text-sm tracking-[0.15em] uppercase text-white/80 transition-all duration-200 hover:text-white hover:drop-shadow-[0_0_8px_rgba(196,129,58,0.5)]"
               >
                 {link.label}
               </Link>
             ))}
             <Link
               href="/new-patient"
-              className="rounded-full bg-[#C4813A] px-6 py-2.5 text-sm font-medium tracking-wide text-white transition-all duration-300 hover:bg-[#E8A85A] hover:scale-105"
+              className="btn-primary px-6 tracking-wide"
             >
               Book Your First Visit
             </Link>
@@ -57,8 +77,10 @@ export function Navbar() {
           {/* Mobile hamburger */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="flex flex-col gap-1.5 md:hidden"
+            className="flex min-h-11 min-w-11 flex-col items-center justify-center gap-1.5 rounded-full text-white md:hidden"
             aria-label="Toggle menu"
+            aria-expanded={mobileOpen}
+            aria-controls={mobileMenuId}
           >
             <span
               className={`h-0.5 w-6 bg-white transition-all duration-300 ${
@@ -80,33 +102,32 @@ export function Navbar() {
       </header>
 
       {/* Mobile drawer — OUTSIDE header to avoid backdrop-filter containing block trap */}
-      <div
-        className={`fixed inset-0 top-16 z-40 bg-[#1B3A2E] transition-all duration-500 md:hidden ${
-          mobileOpen
-            ? "opacity-100 translate-y-0"
-            : "opacity-0 -translate-y-4 pointer-events-none"
-        }`}
-      >
-        <div className="flex flex-col items-center gap-6 pt-12">
-          {NAV_LINKS.map((link) => (
+      {mobileOpen ? (
+        <div
+          id={mobileMenuId}
+          className="fixed inset-x-0 bottom-0 top-[4.5rem] z-40 border-t border-white/10 bg-[#1B3A2E] md:hidden"
+        >
+          <div className="site-shell flex h-full flex-col items-center gap-4 overflow-y-auto pt-8 pb-10">
+            {NAV_LINKS.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setMobileOpen(false)}
+                className="flex min-h-11 items-center text-lg tracking-[0.1em] uppercase text-white/85 transition-colors hover:text-white"
+              >
+                {link.label}
+              </Link>
+            ))}
             <Link
-              key={link.href}
-              href={link.href}
+              href="/new-patient"
               onClick={() => setMobileOpen(false)}
-              className="text-lg tracking-[0.1em] uppercase text-white/80 transition-colors hover:text-white"
+              className="btn-primary mt-3 w-full max-w-sm px-8 text-base"
             >
-              {link.label}
+              Book Your First Visit
             </Link>
-          ))}
-          <Link
-            href="/new-patient"
-            onClick={() => setMobileOpen(false)}
-            className="mt-4 rounded-full bg-[#C4813A] px-8 py-3 text-base font-medium text-white transition-all hover:bg-[#E8A85A]"
-          >
-            Book Your First Visit
-          </Link>
+          </div>
         </div>
-      </div>
+      ) : null}
     </>
   );
 }

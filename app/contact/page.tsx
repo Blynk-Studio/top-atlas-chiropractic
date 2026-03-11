@@ -13,49 +13,55 @@ export default function ContactPage() {
     <>
       {/* Hero */}
       <section
-        className="relative bg-[#1B3A2E] pt-32 pb-20 sm:pb-28 overflow-hidden hero-bg-fade"
+        className="relative overflow-hidden bg-[#1B3A2E] pt-32 pb-20 sm:pb-28 hero-bg-fade"
         style={{
           backgroundImage: 'linear-gradient(rgba(27,58,46,0.80),rgba(27,58,46,0.80)),url(/images/contact-header.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       >
-        <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
-          <p className="text-xs tracking-[0.1em] sm:tracking-[0.2em] uppercase text-[#C4813A] mb-4">
+        <div className="site-shell relative z-10 text-center">
+          <p className="section-eyebrow mb-4">
             Get in Touch
           </p>
-          <h1 className="font-[var(--font-cormorant)] text-[clamp(2rem,6vw,4.5rem)] font-light text-white leading-tight mb-6">
+          <h1 className="mx-auto mb-6 max-w-4xl font-[var(--font-cormorant)] text-[clamp(2.4rem,6vw,4.5rem)] font-light leading-[1.02] text-white">
             Start Your Alignment Journey
           </h1>
-          <p className="mx-auto max-w-xl text-white/60 leading-relaxed">
-            Have questions about NUCCA care? Ready to schedule your first visit? Dr. Shelley&apos;s AI assistant can help right now, or reach out directly.
+          <p className="copy-on-dark mx-auto">
+            Ask a question now, or open a direct email draft to Dr. Shelley. If you&apos;re deciding whether NUCCA is the right fit, this page should get you to the next step quickly.
           </p>
         </div>
       </section>
 
       {/* AI Widget Primary */}
-      <section className="bg-[#FAF7F0] py-20 sm:py-28" data-animate>
-        <div className="mx-auto max-w-4xl px-6">
-          <div className="grid md:grid-cols-2 gap-12">
+      <section className="site-section bg-[#FAF7F0]" data-animate>
+        <div className="site-shell">
+          <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
             {/* Widget */}
             <div>
-              <p className="text-xs tracking-[0.1em] sm:tracking-[0.2em] uppercase text-[#C4813A] mb-3">
+              <p className="section-eyebrow">
                 Instant Help
               </p>
-              <h2 className="font-[var(--font-cormorant)] text-2xl sm:text-3xl font-light text-[#1C2B24] mb-6">
+              <h2 className="mb-4 font-[var(--font-cormorant)] text-2xl font-light leading-tight text-[#1C2B24] sm:text-3xl">
                 Ask Dr. Shelley&apos;s Assistant
               </h2>
+              <p className="copy-muted-sm mb-6 max-w-xl">
+                Best for quick questions about symptoms, NUCCA, pricing, or what happens at your first visit.
+              </p>
               <AIWidgetPanel variant="inline" />
             </div>
 
             {/* Contact Form */}
             <div>
-              <p className="text-xs tracking-[0.1em] sm:tracking-[0.2em] uppercase text-[#C4813A] mb-3">
+              <p className="section-eyebrow">
                 Send a Message
               </p>
-              <h2 className="font-[var(--font-cormorant)] text-2xl sm:text-3xl font-light text-[#1C2B24] mb-6">
-                Or Reach Out Directly
+              <h2 className="mb-4 font-[var(--font-cormorant)] text-2xl font-light leading-tight text-[#1C2B24] sm:text-3xl">
+                Reach Out Directly
               </h2>
+              <p className="copy-muted-sm mb-6 max-w-xl">
+                Prefer email? The form below opens a pre-filled draft addressed to Dr. Shelley so you stay in control of what gets sent.
+              </p>
               <ContactForm />
             </div>
           </div>
@@ -63,10 +69,10 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Info */}
-      <section className="bg-[#F2EDE2] py-20 sm:py-28" data-animate>
-        <div className="mx-auto max-w-4xl px-6">
-          <div className="grid sm:grid-cols-3 gap-8 text-center">
-            <div className="rounded-2xl bg-white p-8">
+      <section className="site-section bg-[#F2EDE2]" data-animate>
+        <div className="site-shell">
+          <div className="grid gap-6 text-center sm:grid-cols-3">
+            <div className="card-surface p-8">
               <div className="h-12 w-12 rounded-full bg-[#2A5441]/5 flex items-center justify-center mx-auto mb-4">
                 <svg className="w-5 h-5 text-[#2A5441]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -75,12 +81,12 @@ export default function ContactPage() {
               <h3 className="font-[var(--font-cormorant)] text-lg font-medium text-[#1C2B24] mb-1">Email</h3>
               <a
                 href="mailto:drshelley@topatlaschiropractic.com"
-                className="text-sm text-[#C4813A] hover:text-[#E8A85A] transition-colors break-all"
+                className="inline-flex min-h-11 items-center justify-center break-all text-sm text-[#C4813A] transition-colors hover:text-[#E8A85A]"
               >
                 drshelley@topatlaschiropractic.com
               </a>
             </div>
-            <div className="rounded-2xl bg-white p-8">
+            <div className="card-surface p-8">
               <div className="h-12 w-12 rounded-full bg-[#2A5441]/5 flex items-center justify-center mx-auto mb-4">
                 <svg className="w-5 h-5 text-[#2A5441]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -88,9 +94,9 @@ export default function ContactPage() {
                 </svg>
               </div>
               <h3 className="font-[var(--font-cormorant)] text-lg font-medium text-[#1C2B24] mb-1">Location</h3>
-              <p className="text-sm text-[#6B7A70]">Austin, TX</p>
+              <p className="copy-muted-sm mx-auto">Austin, TX</p>
             </div>
-            <div className="rounded-2xl bg-white p-8">
+            <div className="card-surface p-8">
               <div className="h-12 w-12 rounded-full bg-[#2A5441]/5 flex items-center justify-center mx-auto mb-4">
                 <svg className="w-5 h-5 text-[#2A5441]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -101,7 +107,7 @@ export default function ContactPage() {
                 href="https://www.instagram.com/topatlaschiro/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-[#C4813A] hover:text-[#E8A85A] transition-colors"
+                className="inline-flex min-h-11 items-center justify-center text-sm text-[#C4813A] transition-colors hover:text-[#E8A85A]"
               >
                 @topatlaschiro
               </a>

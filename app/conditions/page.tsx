@@ -85,16 +85,16 @@ export default function ConditionsPage() {
           backgroundPosition: 'center',
         }}
       >
-        <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
-          <p className="text-xs tracking-[0.1em] sm:tracking-[0.2em] uppercase text-[#C4813A] mb-4">
+        <div className="site-shell relative z-10 text-center">
+          <p className="section-eyebrow mb-4">
             Conditions We Address
           </p>
-          <h1 className="font-[var(--font-cormorant)] text-[clamp(2rem,6vw,4.5rem)] font-light text-white leading-tight mb-6">
+          <h1 className="mx-auto mb-6 max-w-4xl font-[var(--font-cormorant)] text-[clamp(2.25rem,6vw,4.5rem)] font-light leading-[1.02] text-white">
             Where the Atlas Connects<br />
             to Everything
           </h1>
-          <p className="mx-auto max-w-xl text-white/60 leading-relaxed">
-            The atlas vertebra sits at the intersection of your skull, brainstem, and spine. When it's misaligned, the effects cascade throughout your entire body. Here's how NUCCA addresses each condition at its structural root.
+          <p className="copy-on-dark mx-auto">
+            {"The atlas vertebra sits at the intersection of your skull, brainstem, and spine. When it's misaligned, the effects cascade throughout your entire body. Here's how NUCCA addresses each condition at its structural root."}
           </p>
         </div>
       </section>
@@ -120,12 +120,8 @@ export default function ConditionsPage() {
                   </h2>
                 </div>
                 <div className="ml-14 space-y-4 text-left">
-                  <p className="text-[#6B7A70] leading-relaxed">
-                    {condition.description}
-                  </p>
-                  <p className="text-[#6B7A70] leading-relaxed">
-                    {condition.detail}
-                  </p>
+                  <p className="text-[#6B7A70] leading-relaxed">{condition.description}</p>
+                  <p className="text-[#6B7A70] leading-relaxed">{condition.detail}</p>
                 </div>
                 {i < CONDITIONS.length - 1 && (
                   <div className="mt-12 mx-auto w-12 h-px bg-[#C4813A]/20" />
@@ -138,16 +134,16 @@ export default function ConditionsPage() {
 
       {/* CTA */}
       <section className="bg-[#1B3A2E] py-20" data-animate>
-        <div className="mx-auto max-w-2xl px-6 text-center">
+        <div className="site-shell max-w-2xl text-center">
           <h2 className="font-[var(--font-cormorant)] text-3xl sm:text-4xl font-light text-white mb-4">
             Recognize Your Symptoms?
           </h2>
-          <p className="text-white/50 mb-8 text-sm sm:text-base">
-            If you've been living with any of these conditions and haven't found lasting relief, your atlas may be the missing piece. Dr. Shelley has spent 19 years helping patients just like you.
+          <p className="copy-on-dark-sm mx-auto mb-8 max-w-xl">
+            {"If you've been living with any of these conditions and haven't found lasting relief, your atlas may be the missing piece. Dr. Shelley has spent 19 years helping patients just like you."}
           </p>
           <Link
             href="/new-patient"
-            className="inline-block w-full sm:w-auto rounded-full bg-[#C4813A] px-8 py-3.5 text-center text-sm font-medium text-white transition-all duration-300 hover:bg-[#E8A85A] hover:scale-105"
+            className="btn-primary w-full sm:w-auto"
           >
             Find Out if NUCCA Can Help You
           </Link>

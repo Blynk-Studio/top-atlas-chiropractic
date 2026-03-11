@@ -51,7 +51,7 @@ export function CustomCursor() {
     window.addEventListener("mousemove", onMouseMove);
 
     const interactiveEls = document.querySelectorAll(
-      'a, button, [role="button"], input, textarea, select, label'
+      'a, button, [role="button"], label'
     );
     interactiveEls.forEach((el) => {
       el.addEventListener("mouseenter", onMouseEnterInteractive);

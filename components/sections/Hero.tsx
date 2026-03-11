@@ -11,6 +11,8 @@ export function HeroSection() {
     let isMounted = true;
 
     const animate = async () => {
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
       const { default: gsap } = await import("gsap");
       if (!isMounted || !containerRef.current) return;
 
@@ -62,36 +64,39 @@ export function HeroSection() {
       {/* Copper glow behind spine */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[40%] h-[60%] bg-[#C4813A]/5 blur-[80px] rounded-full pointer-events-none" />
 
-      <div className="relative z-10 mx-auto max-w-6xl w-full px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-24">
+      <div className="site-shell relative z-10 grid w-full grid-cols-1 items-center gap-10 py-24 lg:grid-cols-2 lg:gap-14">
         {/* LEFT: Text */}
         <div className="text-left order-2 lg:order-1">
-          <p className="mb-6 text-xs tracking-[0.1em] sm:tracking-[0.2em] uppercase text-[#C4813A]">
+          <p className="section-eyebrow mb-5">
             NUCCA Upper Cervical Chiropractor, Austin TX
           </p>
-          <h1 className="font-[var(--font-cormorant)] text-[clamp(2.5rem,8vw,5.5rem)] font-light leading-[0.95] text-white mb-6">
+          <h1 className="mb-6 text-[clamp(2.75rem,8vw,5.5rem)] font-[var(--font-cormorant)] font-light leading-[0.92] text-white">
             <span className="hero-word inline-block">Precision</span>{" "}
             <span className="hero-word inline-block">Alignment.</span>
             <br />
             <span className="hero-word inline-block text-[#C4813A]">Lasting</span>{" "}
             <span className="hero-word inline-block text-[#C4813A]">Relief.</span>
           </h1>
-          <p className="hero-sub max-w-xl text-base text-white/60 leading-relaxed sm:text-lg mb-10">
-            Dr. Shelley Lorenzen has spent 19 years mastering the most precise, gentle chiropractic technique in the world. No cracking. No twisting. Just one precise correction that changes everything.
+          <p className="hero-sub copy-on-dark mb-8 max-w-2xl">
+            Gentle NUCCA upper cervical care for headaches, migraines, vertigo, and chronic tension in Austin. No cracking. No twisting. One precise correction designed around your anatomy.
           </p>
-          <div className="hero-ctas flex flex-col items-start gap-4 sm:flex-row">
+          <div className="hero-ctas flex flex-col items-stretch gap-3 sm:flex-row sm:items-start">
             <Link
               href="/new-patient"
-              className="w-full sm:w-auto rounded-full bg-[#C4813A] px-8 py-3.5 text-center text-sm font-medium tracking-wide text-white transition-all duration-300 hover:bg-[#E8A85A] hover:scale-105"
+              className="btn-primary w-full sm:w-auto"
             >
-              Schedule Your First Visit
+              Book Your 90-Minute First Visit
             </Link>
             <Link
               href="/nucca"
-              className="w-full sm:w-auto rounded-full border-2 border-white/20 px-8 py-3.5 text-center text-sm font-medium tracking-wide text-white transition-all duration-300 hover:border-white/40 hover:bg-white/5"
+              className="btn-secondary-dark w-full sm:w-auto"
             >
-              Discover NUCCA Care
+              See How NUCCA Works
             </Link>
           </div>
+          <p className="mt-4 text-sm text-white/65">
+            Cash-only care. HSA/FSA eligible. New patient visit: $575.
+          </p>
         </div>
 
         {/* RIGHT: Spine */}
@@ -107,7 +112,7 @@ export function HeroSection() {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
-        <div className="flex flex-col items-center gap-2 text-white/30">
+        <div className="flex flex-col items-center gap-2 text-white/45">
           <span className="text-[10px] tracking-[0.2em] uppercase">Scroll</span>
           <div className="h-8 w-px bg-gradient-to-b from-white/30 to-transparent animate-pulse" />
         </div>

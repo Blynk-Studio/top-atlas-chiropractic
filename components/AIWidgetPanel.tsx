@@ -126,15 +126,19 @@ export function AIWidgetPanel({ variant = "floating" }: AIWidgetPanelProps) {
 
   return (
     <div
-      className={`flex flex-col bg-white rounded-2xl shadow-xl overflow-hidden ${
-        isInline ? "h-[500px]" : "h-full"
+      className={`flex flex-col overflow-hidden rounded-2xl bg-white shadow-xl ${
+        isInline ? "h-[34rem] sm:h-[36rem]" : "h-full"
       }`}
     >
       {/* Tabs */}
-      <div className="flex border-b border-gray-100">
+      <div className="flex border-b border-gray-100" role="tablist" aria-label="Assistant mode">
         <button
           onClick={() => setActiveTab("chat")}
-          className={`flex-1 py-3 text-sm font-medium transition-colors ${
+          role="tab"
+          id={`${variant}-chat-tab`}
+          aria-selected={activeTab === "chat"}
+          aria-controls={`${variant}-chat-panel`}
+          className={`flex min-h-11 flex-1 items-center justify-center py-3 text-sm font-medium transition-colors ${
             activeTab === "chat"
               ? "text-[#2A5441] border-b-2 border-[#C4813A]"
               : "text-gray-400 hover:text-gray-600"
@@ -144,7 +148,11 @@ export function AIWidgetPanel({ variant = "floating" }: AIWidgetPanelProps) {
         </button>
         <button
           onClick={() => setActiveTab("voice")}
-          className={`flex-1 py-3 text-sm font-medium transition-colors ${
+          role="tab"
+          id={`${variant}-voice-tab`}
+          aria-selected={activeTab === "voice"}
+          aria-controls={`${variant}-voice-panel`}
+          className={`flex min-h-11 flex-1 items-center justify-center py-3 text-sm font-medium transition-colors ${
             activeTab === "voice"
               ? "text-[#2A5441] border-b-2 border-[#C4813A]"
               : "text-gray-400 hover:text-gray-600"
@@ -157,7 +165,13 @@ export function AIWidgetPanel({ variant = "floating" }: AIWidgetPanelProps) {
       {activeTab === "chat" ? (
         <>
           {/* Messages */}
-          <div className="flex-1 overflow-y-auto p-4 space-y-3">
+          <div
+            id={`${variant}-chat-panel`}
+            role="tabpanel"
+            aria-labelledby={`${variant}-chat-tab`}
+            aria-live="polite"
+            className="flex-1 space-y-3 overflow-y-auto p-4"
+          >
             {messages.map((msg, i) => (
               <div
                 key={i}
@@ -178,7 +192,7 @@ export function AIWidgetPanel({ variant = "floating" }: AIWidgetPanelProps) {
                         href={part}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="underline opacity-80 hover:opacity-100"
+                        className="underline decoration-current underline-offset-2 opacity-80 hover:opacity-100"
                       >
                         View link →
                       </a>
@@ -212,12 +226,12 @@ export function AIWidgetPanel({ variant = "floating" }: AIWidgetPanelProps) {
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && sendMessage()}
                 placeholder="Ask about NUCCA care..."
-                className="flex-1 rounded-full border border-gray-200 px-4 py-2.5 text-sm text-[#1C2B24] placeholder:text-gray-400 focus:outline-none focus:border-[#C4813A] transition-colors"
+                className="min-h-11 flex-1 rounded-full border border-gray-200 px-4 py-2.5 text-sm text-[#1C2B24] transition-colors placeholder:text-gray-400 focus:border-[#C4813A] focus:outline-none"
               />
               <button
                 onClick={sendMessage}
                 disabled={isLoading || !input.trim()}
-                className="rounded-full bg-[#C4813A] px-4 py-2.5 text-sm text-white transition-all hover:bg-[#E8A85A] disabled:opacity-50"
+                className="btn-primary min-w-20 px-4 py-2.5 disabled:cursor-not-allowed disabled:opacity-50"
               >
                 Send
               </button>
@@ -226,7 +240,12 @@ export function AIWidgetPanel({ variant = "floating" }: AIWidgetPanelProps) {
         </>
       ) : (
         /* Voice tab */
-        <div className="flex-1 flex flex-col items-center justify-center p-8 text-center">
+        <div
+          id={`${variant}-voice-panel`}
+          role="tabpanel"
+          aria-labelledby={`${variant}-voice-tab`}
+          className="flex flex-1 flex-col items-center justify-center p-8 text-center"
+        >
           <div
             className={`w-20 h-20 rounded-full flex items-center justify-center mb-6 transition-all ${
               isCallActive
@@ -258,7 +277,7 @@ export function AIWidgetPanel({ variant = "floating" }: AIWidgetPanelProps) {
           </p>
           <button
             onClick={isCallActive ? () => { retellClientRef.current?.stopCall(); setIsCallActive(false); retellClientRef.current = null; } : startVoiceCall}
-            className={`rounded-full px-8 py-3 text-sm font-medium transition-all ${
+            className={`min-h-11 rounded-full px-8 py-3 text-sm font-medium transition-all ${
               isCallActive
                 ? "bg-red-500 text-white hover:bg-red-600"
                 : "bg-[#C4813A] text-white hover:bg-[#E8A85A] hover:scale-105"

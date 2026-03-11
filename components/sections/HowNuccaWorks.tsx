@@ -23,16 +23,16 @@ const STEPS = [
 
 export function HowNuccaWorks() {
   return (
-    <section className="bg-[#1B3A2E] py-20 sm:py-28" data-animate>
-      <div className="mx-auto max-w-6xl px-6">
+    <section className="site-section bg-[#1B3A2E]" data-animate>
+      <div className="site-shell">
         <div className="text-center mb-16">
-          <p className="text-xs tracking-[0.1em] sm:tracking-[0.2em] uppercase text-[#C4813A] mb-3">
+          <p className="section-eyebrow">
             The NUCCA Method
           </p>
-          <h2 className="font-[var(--font-cormorant)] text-3xl sm:text-4xl md:text-5xl font-light text-white">
+          <h2 className="section-title section-title-dark">
             How NUCCA Works
           </h2>
-          <p className="mt-4 mx-auto max-w-xl text-white/50 text-sm sm:text-base">
+          <p className="copy-on-dark-sm mx-auto mt-4 max-w-xl">
             Structural solutions to unresolved health problems. Three steps to precision alignment.
           </p>
         </div>
@@ -51,7 +51,7 @@ export function HowNuccaWorks() {
                   <h3 className="font-[var(--font-cormorant)] text-xl sm:text-2xl font-medium text-white mb-2">
                     {step.title}
                   </h3>
-                  <p className="text-white/50 text-sm leading-relaxed text-left">
+                  <p className="copy-on-dark-sm text-left">
                     {step.description}
                   </p>
                 </div>

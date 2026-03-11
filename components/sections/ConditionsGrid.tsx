@@ -90,13 +90,13 @@ const CONDITIONS = [
 
 export function ConditionsGrid() {
   return (
-    <section className="bg-[#FAF7F0] py-20 sm:py-28" data-animate>
-      <div className="mx-auto max-w-6xl px-6">
+    <section className="site-section bg-[#FAF7F0]" data-animate>
+      <div className="site-shell">
         <div className="text-center mb-14">
-          <p className="text-xs tracking-[0.1em] sm:tracking-[0.2em] uppercase text-[#C4813A] mb-3">
+          <p className="section-eyebrow">
             What Brings You Here?
           </p>
-          <h2 className="font-[var(--font-cormorant)] text-3xl sm:text-4xl md:text-5xl font-light text-[#1C2B24]">
+          <h2 className="section-title">
             Conditions We Address
           </h2>
         </div>
@@ -106,7 +106,7 @@ export function ConditionsGrid() {
             <Link
               key={condition.name}
               href="/conditions"
-              className="group relative flex flex-col items-center gap-3 rounded-2xl bg-white p-6 sm:p-8 text-center transition-all duration-500 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#C4813A]/10 border-l-2 border-l-transparent hover:border-l-[#C4813A]"
+              className="card-surface group relative flex min-h-[12rem] flex-col items-center justify-center gap-3 p-6 text-center transition-all duration-500 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#C4813A]/10 sm:p-8"
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#2A5441]/5 text-[#2A5441] transition-all duration-500 group-hover:bg-[#C4813A]/10 group-hover:text-[#C4813A] group-hover:scale-110">
                 {condition.icon}
@@ -122,9 +122,9 @@ export function ConditionsGrid() {
         <div className="mt-12 text-center">
           <Link
             href="/conditions"
-            className="inline-flex items-center gap-2 text-sm font-medium text-[#C4813A] transition-all hover:gap-3"
+            className="btn-link"
           >
-            Explore all conditions we treat
+            See every condition we address
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>

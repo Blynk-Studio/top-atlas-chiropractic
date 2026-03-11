@@ -10,11 +10,11 @@ export function AIWidgetFloating() {
     <>
       {/* Panel */}
       {isOpen && (
-        <div className="fixed bottom-20 right-4 left-4 sm:left-auto sm:w-[380px] max-h-[80vh] z-50 flex flex-col">
+        <div className="fixed bottom-20 left-4 right-4 z-50 flex max-h-[min(80vh,42rem)] flex-col sm:left-auto sm:w-[24rem]">
           <div className="flex justify-end mb-2">
             <button
               onClick={() => setIsOpen(false)}
-              className="rounded-full bg-white/90 p-1.5 text-gray-500 shadow-md hover:text-gray-800 transition-colors"
+              className="min-h-11 min-w-11 rounded-full bg-white/95 p-2 text-gray-500 shadow-md transition-colors hover:text-gray-800"
               aria-label="Close chat"
             >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -31,10 +31,11 @@ export function AIWidgetFloating() {
       {/* FAB — pill button with mic icon + label */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`fixed bottom-6 right-6 z-50 flex items-center gap-2.5 pl-4 pr-5 h-12 rounded-full shadow-lg font-semibold text-sm text-white transition-all duration-300 active:scale-[0.93] ${
+        className={`fixed bottom-6 right-6 z-50 flex min-h-12 items-center gap-2.5 rounded-full pl-4 pr-5 shadow-lg font-semibold text-sm text-white transition-all duration-300 active:scale-[0.93] ${
           isOpen ? "bg-[#1B3A2E]" : "bg-[#C4813A]"
         }`}
         aria-label={isOpen ? "Close AI advisor" : "Open AI advisor"}
+        aria-expanded={isOpen}
       >
         {isOpen ? (
           <svg className="w-5 h-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

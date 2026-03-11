@@ -20,20 +20,20 @@ const CONDITIONS = [
 export function Footer() {
   return (
     <footer className="bg-[#1B3A2E] text-white">
-      <div className="mx-auto max-w-7xl px-6 pt-16 pb-8">
-        <div className="grid grid-cols-2 gap-8 sm:grid-cols-2 md:grid-cols-4">
+      <div className="site-shell-wide pt-16 pb-8">
+        <div className="grid grid-cols-1 gap-10 border-b border-white/10 pb-10 sm:grid-cols-2 md:grid-cols-4">
           {/* Brand */}
-          <div className="col-span-2 sm:col-span-1">
+          <div className="sm:col-span-2 md:col-span-1">
             <h3 className="font-[var(--font-cormorant)] text-2xl font-semibold mb-4">
               Top Atlas Chiropractic
             </h3>
-            <p className="text-sm text-white/60 leading-relaxed mb-4">
+            <p className="copy-on-dark-sm mb-4">
               NUCCA upper cervical care in Austin, TX. Precision alignment for lasting relief.
             </p>
-            <p className="text-sm text-white/70">
+            <p className="text-sm text-white/80">
               <a
                 href="mailto:drshelley@topatlaschiropractic.com"
-                className="hover:text-white transition-colors"
+                className="inline-flex min-h-11 items-center hover:text-white transition-colors"
               >
                 drshelley@topatlaschiropractic.com
               </a>
@@ -42,15 +42,15 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-xs tracking-[0.15em] uppercase text-white/40 mb-4 font-medium">
+            <h4 className="mb-4 text-xs font-medium uppercase tracking-[0.15em] text-white/55">
               Quick Links
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               {QUICK_LINKS.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-white/60 hover:text-white transition-colors"
+                    className="inline-flex min-h-11 items-center text-sm text-white/78 transition-colors hover:text-white"
                   >
                     {link.label}
                   </Link>
@@ -61,15 +61,15 @@ export function Footer() {
 
           {/* Conditions */}
           <div>
-            <h4 className="text-xs tracking-[0.15em] uppercase text-white/40 mb-4 font-medium">
+            <h4 className="mb-4 text-xs font-medium uppercase tracking-[0.15em] text-white/55">
               Conditions
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               {CONDITIONS.map((c) => (
                 <li key={c}>
                   <Link
                     href="/conditions"
-                    className="text-sm text-white/60 hover:text-white transition-colors"
+                    className="inline-flex min-h-11 items-center text-sm text-white/78 transition-colors hover:text-white"
                   >
                     {c}
                   </Link>
@@ -80,10 +80,10 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-xs tracking-[0.15em] uppercase text-white/40 mb-4 font-medium">
+            <h4 className="mb-4 text-xs font-medium uppercase tracking-[0.15em] text-white/55">
               Visit
             </h4>
-            <p className="text-sm text-white/60 leading-relaxed">
+            <p className="copy-on-dark-sm">
               Austin, TX
             </p>
             <div className="mt-4 flex gap-4">
@@ -91,7 +91,7 @@ export function Footer() {
                 href="https://www.instagram.com/topatlaschiro/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white/50 hover:text-white transition-colors"
+                className="flex min-h-11 min-w-11 items-center justify-center rounded-full text-white/65 transition-colors hover:bg-white/8 hover:text-white"
                 aria-label="Instagram"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -103,17 +103,17 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-white/40">
+        <div className="mt-6 flex flex-col items-center justify-between gap-4 pt-2 text-center sm:flex-row sm:text-left">
+          <p className="text-xs text-white/50">
             &copy; {new Date().getFullYear()} Top Atlas Chiropractic. All rights reserved.
           </p>
-          <p className="text-xs text-white/30">
+          <p className="text-xs text-white/40">
             Built by{" "}
             <a
               href="https://blynk.studio"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white/40 hover:text-white/60 transition-colors"
+              className="inline-flex min-h-11 items-center text-white/55 transition-colors hover:text-white/75"
             >
               Blynk Studio
             </a>

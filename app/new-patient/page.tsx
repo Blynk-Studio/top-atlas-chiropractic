@@ -35,20 +35,20 @@ export default function NewPatientPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-[#1B3A2E] pt-32 pb-20 sm:pb-28 overflow-hidden">
+      <section className="relative overflow-hidden bg-[#1B3A2E] pt-32 pb-20 sm:pb-28">
         <div className="absolute inset-0 opacity-10">
           <Image src="/images/dr-shelley-xray.jpg" alt="" fill className="object-cover" priority sizes="100vw" />
         </div>
-        <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
-          <p className="text-xs tracking-[0.1em] sm:tracking-[0.2em] uppercase text-[#C4813A] mb-4">
+        <div className="site-shell relative z-10 text-center">
+          <p className="section-eyebrow mb-4">
             Your First Visit
           </p>
-          <h1 className="font-[var(--font-cormorant)] text-[clamp(2rem,6vw,4.5rem)] font-light text-white leading-tight mb-6">
+          <h1 className="mx-auto mb-6 max-w-4xl font-[var(--font-cormorant)] text-[clamp(2.25rem,6vw,4.5rem)] font-light leading-[1.02] text-white">
             90 Minutes That Could<br />
             Change Everything
           </h1>
-          <p className="mx-auto max-w-xl text-white/60 leading-relaxed">
-            Your first visit is not a rush job. It's a 90-minute, comprehensive assessment designed to understand your unique anatomy, identify atlas misalignment, and deliver your first precision NUCCA correction.
+          <p className="copy-on-dark mx-auto">
+            {"Your first visit is not a rush job. It's a 90-minute, comprehensive assessment designed to understand your unique anatomy, identify atlas misalignment, and deliver your first precision NUCCA correction."}
           </p>
         </div>
       </section>
@@ -130,7 +130,7 @@ export default function NewPatientPage() {
             <h2 className="font-[var(--font-cormorant)] text-3xl sm:text-4xl font-light text-white mb-4">
               Transparent, Straightforward Pricing
             </h2>
-            <p className="text-white/50 max-w-lg mx-auto text-sm sm:text-base">
+            <p className="copy-on-dark-sm mx-auto max-w-lg">
               Top Atlas Chiropractic is a cash-only practice. No insurance middlemen. No surprise bills. Just focused, uncompromised care.
             </p>
           </div>
@@ -143,7 +143,7 @@ export default function NewPatientPage() {
               <div className="font-[var(--font-cormorant)] text-5xl font-light text-[#C4813A] my-4">
                 $575
               </div>
-              <ul className="space-y-2 text-sm text-white/50 text-left">
+              <ul className="space-y-2 text-sm text-white/75 text-left">
                 <li className="flex items-start gap-2">
                   <span className="text-[#C4813A] mt-0.5">&#10003;</span>
                   90-minute comprehensive visit
@@ -173,7 +173,7 @@ export default function NewPatientPage() {
               <div className="font-[var(--font-cormorant)] text-5xl font-light text-[#C4813A] my-4">
                 $85
               </div>
-              <ul className="space-y-2 text-sm text-white/50 text-left">
+              <ul className="space-y-2 text-sm text-white/75 text-left">
                 <li className="flex items-start gap-2">
                   <span className="text-[#C4813A] mt-0.5">&#10003;</span>
                   30-minute focused visit
@@ -212,10 +212,10 @@ export default function NewPatientPage() {
           </h2>
           <div className="space-y-4 text-[#6B7A70] leading-relaxed text-left">
             <p>
-              Insurance companies decide how many visits you get, how long each visit lasts, and which X-rays are "medically necessary." They optimize for cost, not for outcomes.
+              {'Insurance companies decide how many visits you get, how long each visit lasts, and which X-rays are "medically necessary." They optimize for cost, not for outcomes.'}
             </p>
             <p>
-              At Top Atlas Chiropractic, Dr. Shelley decides what you need based on your anatomy, your symptoms, and your goals. Your first visit is 90 minutes, because that's what proper NUCCA evaluation requires. No insurance company would approve that.
+              {"At Top Atlas Chiropractic, Dr. Shelley decides what you need based on your anatomy, your symptoms, and your goals. Your first visit is 90 minutes, because that's what proper NUCCA evaluation requires. No insurance company would approve that."}
             </p>
             <p>
               Cash-only practice means: no denied claims, no surprise bills, no treatment limitations, no pre-authorization delays. Just the care you need, when you need it, for exactly as long as it takes.
@@ -259,19 +259,19 @@ export default function NewPatientPage() {
           <h2 className="font-[var(--font-cormorant)] text-3xl sm:text-4xl font-light text-white mb-4">
             Your Atlas is Waiting
           </h2>
-          <p className="text-white/50 mb-8 text-sm sm:text-base">
+          <p className="copy-on-dark-sm mx-auto mb-8 max-w-xl">
             19 years of expertise. 90 minutes of focused attention. One precise correction that could change everything.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="mailto:drshelley@topatlaschiropractic.com"
-              className="w-full sm:w-auto rounded-full bg-[#C4813A] px-8 py-3.5 text-center text-sm font-medium text-white transition-all duration-300 hover:bg-[#E8A85A] hover:scale-105"
+              className="btn-primary w-full sm:w-auto"
             >
               Email Dr. Shelley to Book
             </a>
             <Link
               href="/contact"
-              className="w-full sm:w-auto rounded-full border-2 border-white/20 px-8 py-3.5 text-center text-sm font-medium text-white transition-all duration-300 hover:border-white/40 hover:bg-white/5"
+              className="btn-secondary-dark w-full sm:w-auto"
             >
               More Ways to Reach Us
             </Link>

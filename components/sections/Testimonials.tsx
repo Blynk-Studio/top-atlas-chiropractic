@@ -35,17 +35,15 @@ const TESTIMONIALS = [
 
 export function TestimonialsSection() {
   return (
-    <section className="bg-[#F2EDE2] py-20 sm:py-28" data-animate>
-      <div className="mx-auto max-w-6xl px-6">
+    <section className="site-section bg-[#F2EDE2]" data-animate>
+      <div className="site-shell">
         <div className="text-center mb-14">
-          <p className="text-xs tracking-[0.1em] sm:tracking-[0.2em] uppercase text-[#C4813A] mb-3">
+          <p className="section-eyebrow">
             Patient Stories
           </p>
-          <h2 className="font-[var(--font-cormorant)] text-3xl sm:text-4xl md:text-5xl font-light text-[#1C2B24]">
-            They Tried Everything Else First
-          </h2>
-          <p className="mt-4 text-[#6B7A70] text-sm sm:text-base max-w-xl mx-auto">
-            Most NUCCA patients arrive after years of searching for answers. Here's what happened when they found theirs.
+          <h2 className="section-title">{"They Tried Everything Else First"}</h2>
+          <p className="copy-muted-sm mx-auto mt-4 max-w-xl">
+            {"Most NUCCA patients arrive after years of searching for answers. Here's what happened when they found theirs."}
           </p>
         </div>
 
@@ -62,14 +60,14 @@ export function TestimonialsSection() {
           {TESTIMONIALS.map((t, i) => (
             <div
               key={i}
-              className="group rounded-2xl bg-white p-6 sm:p-8 transition-all duration-500 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#C4813A]/10"
+              className="card-surface group p-6 transition-all duration-500 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#C4813A]/10 sm:p-8"
             >
               <div className="mb-4 inline-block rounded-full bg-[#2A5441]/5 px-3 py-1">
                 <span className="text-[10px] tracking-[0.1em] uppercase text-[#2A5441] font-medium">
                   {t.condition}
                 </span>
               </div>
-              <p className="text-sm text-[#6B7A70] leading-relaxed mb-6 text-left">
+              <p className="copy-muted-sm mb-6 text-left">
                 &ldquo;{t.text}&rdquo;
               </p>
               <div className="flex items-center gap-3">

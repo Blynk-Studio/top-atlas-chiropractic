@@ -63,9 +63,18 @@ export function AnimationProvider({ children }: { children: ReactNode }) {
   const isReady = useRef(false);
 
   useEffect(() => {
+    let cleanup: (() => void) | undefined;
+
     const init = async () => {
+      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
       if (typeof history !== "undefined") history.scrollRestoration = "manual";
       window.scrollTo(0, 0);
+
+      if (prefersReducedMotion) {
+        isReady.current = true;
+        return;
+      }
 
       const [{ default: gsap }, { ScrollTrigger }, { default: Lenis }] =
         await Promise.all([
@@ -83,9 +92,11 @@ export function AnimationProvider({ children }: { children: ReactNode }) {
 
       lenis.on("scroll", ScrollTrigger.update);
 
-      gsap.ticker.add((time: number) => {
+      const onTick = (time: number) => {
         lenis.raf(time * 1000);
-      });
+      };
+
+      gsap.ticker.add(onTick);
 
       gsap.ticker.lagSmoothing(0);
 
@@ -112,9 +123,16 @@ export function AnimationProvider({ children }: { children: ReactNode }) {
       initCountUps(gsap);
 
       isReady.current = true;
+
+      cleanup = () => {
+        lenis.destroy();
+        gsap.ticker.remove(onTick);
+        ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+      };
     };
 
     init();
+    return () => cleanup?.();
   }, []);
 
   return (
