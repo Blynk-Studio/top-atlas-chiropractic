@@ -12,27 +12,27 @@ export const metadata: Metadata = {
 const FAQ_ITEMS = [
   {
     q: "Does a NUCCA adjustment hurt?",
-    a: "Not at all. Most patients describe the adjustment as a gentle pressure at the base of the skull. There is no cracking, twisting, or popping. Many patients are surprised by how subtle it feels, but the X-rays taken after the adjustment show measurable structural change.",
+    a: "Not at all. Most patients describe it as gentle pressure at the base of the skull. There is no cracking, twisting, or popping, but follow-up X-rays show measurable change.",
   },
   {
     q: "How is NUCCA different from regular chiropractic?",
-    a: "Traditional chiropractic adjusts multiple segments of the spine using manual force. NUCCA focuses exclusively on the C1 atlas vertebra using precise, calculated corrections based on X-ray analysis. The correction is gentle and specific, with the goal that one small alignment change at the top cascades correction down the entire spine.",
+    a: "Traditional chiropractic often adjusts multiple spinal segments with manual force. NUCCA focuses only on the C1 atlas using precise corrections based on X-ray analysis. The correction is gentle, specific, and designed to let alignment cascade down the spine.",
   },
   {
     q: "How many visits will I need?",
-    a: "Every patient is different. Some feel dramatic improvement after one visit. Most patients need a series of visits as the body learns to hold the correction. Dr. Shelley will discuss your specific timeline during your first visit based on your X-ray findings.",
+    a: "Every patient is different. Some improve after one visit. Most need a series of visits while the body learns to hold the correction. Dr. Shelley will discuss your likely timeline at your first visit.",
   },
   {
     q: "Why don't you accept insurance?",
-    a: "Insurance companies dictate visit frequency, limit X-rays, and restrict the time a doctor can spend with you. Cash-only practice means Dr. Shelley decides what you need, not an insurance company. Your first visit is 90 minutes. Try getting that with insurance.",
+    a: "Insurance companies dictate visit frequency, limit X-rays, and restrict how much time a doctor can spend with you. Cash-only care means Dr. Shelley decides what you need. Your first visit is 90 minutes.",
   },
   {
     q: "Is NUCCA safe for children?",
-    a: "Yes. The gentle nature of NUCCA makes it appropriate for patients of all ages. Children who have experienced birth trauma, falls, or sports impacts can benefit from atlas alignment assessment.",
+    a: "Yes. The gentle nature of NUCCA makes it appropriate for patients of all ages. Children who have experienced birth trauma, falls, or sports impacts may benefit from an atlas alignment assessment.",
   },
   {
     q: "What conditions does NUCCA help with?",
-    a: "NUCCA has been shown to help with chronic headaches, migraines, vertigo, neck pain, TMJ disorders, concussion recovery, sleep disruption, and whole-body tension. When the atlas is misaligned, it can affect the brainstem and nervous system, contributing to a wide range of symptoms.",
+    a: "NUCCA may help with chronic headaches, migraines, vertigo, neck pain, TMJ disorders, concussion recovery, sleep disruption, and whole-body tension. When the atlas is misaligned, it can affect the brainstem and nervous system and contribute to a wide range of symptoms.",
   },
 ];
 
@@ -57,7 +57,7 @@ export default function NuccaPage() {
             Everything Changes.
           </h1>
           <p className="copy-on-dark mx-auto">
-            {"NUCCA stands for National Upper Cervical Chiropractic Association. It's the most specialized chiropractic technique in existence, focused entirely on the atlas vertebra, the C1, the ring-shaped bone where your skull meets your spine."}
+            {"NUCCA stands for National Upper Cervical Chiropractic Association. It is a specialized technique focused entirely on the atlas, the C1 vertebra where your skull meets your spine."}
           </p>
         </div>
       </section>
@@ -72,10 +72,10 @@ export default function NuccaPage() {
               </h2>
               <div className="space-y-4 text-[#6B7A70] leading-relaxed text-left">
                 <p>
-                  {"The atlas (C1) is the topmost vertebra in your spine. It's a ring-shaped bone that supports the weight of your entire skull and protects the brainstem, the highway between your brain and body."}
+                  {"The atlas, or C1, is the top vertebra in your spine. It supports your skull and protects the brainstem, the communication highway between your brain and body."}
                 </p>
                 <p>
-                  When the atlas shifts even a fraction of a degree, it can compress the brainstem, distort nerve signals, and force your entire spine to compensate. Your body adapts: one shoulder drops, your hips tilt, muscles tighten. The symptoms that follow, headaches, vertigo, chronic pain, can seem unrelated to the neck.
+                  When the atlas shifts even slightly, it can compress the brainstem, distort nerve signals, and force the rest of your spine to compensate. One shoulder drops. Hips tilt. Muscles tighten. Headaches, vertigo, and chronic pain can follow.
                 </p>
                 <p>{"But they're not. They're all downstream of one misaligned bone."}</p>
               </div>
@@ -98,7 +98,7 @@ export default function NuccaPage() {
               Why NUCCA is Different
             </h2>
             <p className="text-[#6B7A70] max-w-xl mx-auto">
-              {"This is not the chiropractic you're used to. Here's what sets NUCCA apart."}
+              {"This is not the chiropractic most people expect. Here is what sets NUCCA apart."}
             </p>
           </div>
 
@@ -106,19 +106,19 @@ export default function NuccaPage() {
             {[
               {
                 title: "No Cracking or Twisting",
-                desc: "The adjustment is a gentle touch at the base of the skull. Patients often say they barely felt it, but the structural change is measurable on follow-up X-rays.",
+                desc: "The adjustment is a gentle touch at the base of the skull. Many patients barely feel it, but follow-up X-rays show measurable change.",
               },
               {
                 title: "X-Ray Precision",
-                desc: "Before any adjustment, specialized X-rays calculate the exact angle and direction of your misalignment. Every correction is mathematically calculated, not estimated.",
+                desc: "Specialized X-rays calculate the exact angle and direction of your misalignment. Every correction is measured, not estimated.",
               },
               {
                 title: "One Bone, Full-Spine Effect",
-                desc: "Correcting the atlas doesn't just fix your neck. It allows your entire spine to realign naturally. The body is self-correcting once the foundation is level.",
+                desc: "Correcting the atlas does not just affect your neck. It lets the rest of your spine realign naturally once the foundation is level.",
               },
               {
                 title: "Fewer Visits, Lasting Results",
-                desc: "Because NUCCA corrections are precise, your body holds them longer. Most patients need far fewer visits than traditional chiropractic care.",
+                desc: "Because NUCCA corrections are precise, the body often holds them longer. Many patients need fewer visits than with traditional chiropractic care.",
               },
             ].map((item, i) => (
               <div
@@ -165,9 +165,9 @@ export default function NuccaPage() {
           </div>
           <div className="grid sm:grid-cols-3 gap-6 text-center">
             {[
-              { label: "Before", desc: "You lie on your side on a specialized table. Dr. Shelley positions your head at the precise correction angle calculated from your X-rays." },
-              { label: "During", desc: "A gentle, sustained contact behind your ear. No popping. No twisting. Most patients describe it as light pressure. The whole correction takes seconds." },
-              { label: "After", desc: "Some patients feel immediate relief. Others feel a gentle warmth or relaxation. Post-adjustment X-rays confirm the structural change has occurred." },
+              { label: "Before", desc: "You lie on your side on a specialized table while Dr. Shelley positions your head at the angle calculated from your X-rays." },
+              { label: "During", desc: "A gentle contact behind your ear. No popping. No twisting. Most patients describe it as light pressure, and the correction takes seconds." },
+              { label: "After", desc: "Some patients feel relief right away. Others notice warmth or relaxation. Post-adjustment X-rays confirm the structural change." },
             ].map((step, i) => (
               <div key={i} className="p-6">
                 <span className="font-[var(--font-cormorant)] text-2xl text-[#C4813A] font-light">{step.label}</span>
@@ -188,7 +188,7 @@ export default function NuccaPage() {
               Common Questions
             </p>
             <h2 className="font-[var(--font-cormorant)] text-3xl sm:text-4xl font-light text-[#1C2B24]">
-              Frequently Asked About NUCCA
+              NUCCA FAQ
             </h2>
           </div>
           <div className="space-y-6">
@@ -213,16 +213,16 @@ export default function NuccaPage() {
       <section className="bg-[#1B3A2E] py-20" data-animate>
         <div className="site-shell max-w-2xl text-center">
           <h2 className="font-[var(--font-cormorant)] text-3xl sm:text-4xl font-light text-white mb-4">
-            Experience the NUCCA Difference
+            Experience NUCCA
           </h2>
           <p className="copy-on-dark-sm mx-auto mb-8 max-w-xl">
-            Your first visit includes comprehensive X-rays, atlas analysis, and your first precision adjustment. 90 minutes dedicated entirely to you.
+            Your first visit includes specialized X-rays, atlas analysis, and your first precision adjustment. You get 90 minutes of focused care.
           </p>
           <Link
             href="/new-patient"
             className="btn-primary w-full sm:w-auto"
           >
-            Schedule Your First NUCCA Visit
+            Book a Visit
           </Link>
         </div>
       </section>

@@ -17,7 +17,7 @@ export function AIWidgetPanel({ variant = "floating" }: AIWidgetPanelProps) {
     {
       role: "agent",
       content:
-        "Hi there! I'm Dr. Shelley's assistant. I can answer questions about NUCCA care, help you understand if upper cervical chiropractic might be right for you, or walk you through what to expect at your first visit. What would you like to know?",
+        "Hi, I'm Dr. Shelley's assistant. I can answer questions about NUCCA care, symptoms, pricing, and your first visit. What would you like to know?",
     },
   ]);
   const [input, setInput] = useState("");
@@ -84,7 +84,7 @@ export function AIWidgetPanel({ variant = "floating" }: AIWidgetPanelProps) {
       const data = await res.json();
       setMessages((prev) => [
         ...prev,
-        { role: "agent", content: data.response || "I'm sorry, I couldn't process that." },
+        { role: "agent", content: data.response || "Sorry, I couldn't process that." },
       ]);
     } catch {
       setMessages((prev) => [
@@ -144,7 +144,7 @@ export function AIWidgetPanel({ variant = "floating" }: AIWidgetPanelProps) {
               : "text-gray-400 hover:text-gray-600"
           }`}
         >
-          💬 Chat
+          Chat
         </button>
         <button
           onClick={() => setActiveTab("voice")}
@@ -158,7 +158,7 @@ export function AIWidgetPanel({ variant = "floating" }: AIWidgetPanelProps) {
               : "text-gray-400 hover:text-gray-600"
           }`}
         >
-          🎙 Voice
+          Voice
         </button>
       </div>
 
@@ -225,7 +225,7 @@ export function AIWidgetPanel({ variant = "floating" }: AIWidgetPanelProps) {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && sendMessage()}
-                placeholder="Ask about NUCCA care..."
+                placeholder="Ask about NUCCA..."
                 className="min-h-11 flex-1 rounded-full border border-gray-200 px-4 py-2.5 text-sm text-[#1C2B24] transition-colors placeholder:text-gray-400 focus:border-[#C4813A] focus:outline-none"
               />
               <button
@@ -268,12 +268,12 @@ export function AIWidgetPanel({ variant = "floating" }: AIWidgetPanelProps) {
             </svg>
           </div>
           <h3 className="font-[var(--font-cormorant)] text-xl font-semibold text-[#1C2B24] mb-2">
-            {isCallActive ? "Speaking with Dr. Shelley's assistant..." : "Talk with Dr. Shelley's Assistant"}
+            {isCallActive ? "You're talking now" : "Talk to the Assistant"}
           </h3>
           <p className="text-sm text-[#6B7A70] mb-6">
             {isCallActive
-              ? "Your call is active. Click below to end."
-              : "Have a conversation about NUCCA care, your symptoms, or what to expect at your first visit."}
+              ? "Your call is live. Click below to end it."
+              : "Ask about NUCCA care, symptoms, pricing, or your first visit."}
           </p>
           <button
             onClick={isCallActive ? () => { retellClientRef.current?.stopCall(); setIsCallActive(false); retellClientRef.current = null; } : startVoiceCall}
@@ -283,7 +283,7 @@ export function AIWidgetPanel({ variant = "floating" }: AIWidgetPanelProps) {
                 : "bg-[#C4813A] text-white hover:bg-[#E8A85A] hover:scale-105"
             }`}
           >
-            {isCallActive ? "End Call" : "Start Voice Call"}
+            {isCallActive ? "End Call" : "Start Call"}
           </button>
         </div>
       )}

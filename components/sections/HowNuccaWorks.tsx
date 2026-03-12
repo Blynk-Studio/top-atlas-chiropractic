@@ -3,21 +3,21 @@ import { AtlasVisual } from "@/components/AtlasVisual";
 const STEPS = [
   {
     number: "01",
-    title: "Precise X-Ray Analysis",
+    title: "Precise X-Rays",
     description:
-      "Before any adjustment, Dr. Shelley takes specialized X-rays to calculate the exact angle and direction of your atlas misalignment. This isn't guesswork. It's engineering.",
+      "Before any adjustment, Dr. Shelley takes specialized X-rays to calculate the exact angle and direction of your atlas misalignment. This is not guesswork. It is engineering.",
   },
   {
     number: "02",
-    title: "Custom Correction Angle",
+    title: "Custom Correction",
     description:
-      "Using your X-ray data, a correction vector is calculated unique to your anatomy. No two adjustments are the same, because no two spines are the same.",
+      "Using your X-rays, she calculates the correction for your anatomy. No two spines are the same, so no two corrections are either.",
   },
   {
     number: "03",
     title: "Gentle Atlas Adjustment",
     description:
-      "A precise, gentle touch at the base of the skull. No cracking. No twisting. No popping. One small correction to the atlas changes the alignment of your entire spine.",
+      "A gentle touch at the base of the skull. No cracking. No twisting. No popping. One small correction at the atlas can shift the alignment of your whole spine.",
   },
 ];
 
@@ -33,7 +33,7 @@ export function HowNuccaWorks() {
             How NUCCA Works
           </h2>
           <p className="copy-on-dark-sm mx-auto mt-4 max-w-xl">
-            Structural solutions to unresolved health problems. Three steps to precision alignment.
+            Three steps to precise alignment.
           </p>
         </div>
 

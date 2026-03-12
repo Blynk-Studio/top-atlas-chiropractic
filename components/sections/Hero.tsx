@@ -78,20 +78,20 @@ export function HeroSection() {
             <span className="hero-word inline-block text-[#C4813A]">Relief.</span>
           </h1>
           <p className="hero-sub copy-on-dark mb-8 max-w-2xl">
-            Gentle NUCCA upper cervical care for headaches, migraines, vertigo, and chronic tension in Austin. No cracking. No twisting. One precise correction designed around your anatomy.
+            Gentle NUCCA care for headaches, migraines, vertigo, and chronic tension in Austin. No cracking. No twisting. One precise correction built around your anatomy.
           </p>
           <div className="hero-ctas flex flex-col items-stretch gap-3 sm:flex-row sm:items-start">
             <Link
               href="/new-patient"
               className="btn-primary w-full sm:w-auto"
             >
-              Book Your 90-Minute First Visit
+              Book First Visit
             </Link>
             <Link
               href="/nucca"
               className="btn-secondary-dark w-full sm:w-auto"
             >
-              See How NUCCA Works
+              How NUCCA Works
             </Link>
           </div>
           <p className="mt-4 text-sm text-white/65">

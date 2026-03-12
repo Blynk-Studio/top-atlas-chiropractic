@@ -1,20 +1,20 @@
 import Link from "next/link";
 
 const QUICK_LINKS = [
-  { label: "About Dr. Shelley", href: "/about" },
-  { label: "NUCCA Technique", href: "/nucca" },
-  { label: "Conditions We Treat", href: "/conditions" },
-  { label: "New Patient Info", href: "/new-patient" },
+  { label: "About Shelley", href: "/about" },
+  { label: "About NUCCA", href: "/nucca" },
+  { label: "Conditions", href: "/conditions" },
+  { label: "First Visit", href: "/new-patient" },
   { label: "Contact", href: "/contact" },
 ];
 
 const CONDITIONS = [
-  "Chronic Headaches",
-  "Migraines",
+  "Headaches",
+  "Migraine",
   "Vertigo",
   "Neck Pain",
-  "Sports Injuries",
-  "Concussion Recovery",
+  "Sports Injury",
+  "Concussion",
 ];
 
 export function Footer() {
@@ -28,7 +28,7 @@ export function Footer() {
               Top Atlas Chiropractic
             </h3>
             <p className="copy-on-dark-sm mb-4">
-              NUCCA upper cervical care in Austin, TX. Precision alignment for lasting relief.
+              NUCCA upper cervical care in Austin for lasting relief.
             </p>
             <p className="text-sm text-white/80">
               <a

@@ -24,7 +24,7 @@ export default function AboutPage() {
                 World-Class Precision.
               </h1>
               <p className="copy-on-dark text-left">
-                {"Dr. Shelley Lorenzen didn't choose NUCCA chiropractic. NUCCA chose her, at a conference in Chicago, in 2003, when she witnessed something that contradicted everything she'd been taught about the spine. That moment redirected her entire career."}
+                {"Dr. Shelley Lorenzen found NUCCA at a 2003 conference in Chicago. What she saw changed her view of the spine and redirected her career."}
               </p>
             </div>
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden">
@@ -49,24 +49,24 @@ export default function AboutPage() {
         </div>
         <div className="relative z-10 mx-auto max-w-3xl px-6">
           <h2 className="font-[var(--font-cormorant)] text-3xl sm:text-4xl font-light text-[#1C2B24] mb-10 text-center">
-            The Journey to Your Atlas
+            The Road to NUCCA
           </h2>
 
           <div className="space-y-8 text-[#6B7A70] leading-relaxed text-left">
             <p>
-              {"Shelley Lorenzen grew up in Colfax, Wisconsin, a town so small it has no stop signs, more cows than people, and exactly the kind of childhood that produces distance runners and people who don't quit. She was a three-sport athlete through high school: cross country, basketball, and track."}
+              {"Shelley Lorenzen grew up in Colfax, Wisconsin, a town with more cows than people and no stop signs. She was a three-sport athlete in cross country, basketball, and track."}
             </p>
               <p>
-                {'She studied biology at the University of Wisconsin-La Crosse, where the question shifted from "what does a body do?" to "what prevents it from doing what it should?" That question led her to Palmer College of Chiropractic in Davenport, Iowa, the birthplace of chiropractic itself.'}
+                {'She studied biology at the University of Wisconsin-La Crosse, where the question shifted from "what does a body do?" to "what stops it from doing what it should?" That question led her to Palmer College of Chiropractic in Davenport.'}
               </p>
             <p>
-              But the real turning point came in 2003, at a chiropractic conference in Chicago. A NUCCA practitioner demonstrated how a single, gentle correction to the atlas vertebra, the C1, the ring-shaped bone where the skull meets the spine, could realign the entire body. No cracking. No force. Just precision.
+              The turning point came in 2003 at a chiropractic conference in Chicago. A NUCCA practitioner showed how one gentle correction to the atlas, the C1 vertebra where the skull meets the spine, could realign the body. No cracking. No force. Just precision.
             </p>
             <p>
-              {"Dr. Shelley was hooked. She pursued advanced NUCCA certification and in 2006 moved to Austin, Texas, joining Back N Balance, where she spent the next 19 years mastering the technique. Thousands of patients. Thousands of X-rays. Every atlas is different, and she's seen them all."}
+              {"She pursued advanced NUCCA training and moved to Austin in 2006, joining Back N Balance. She spent the next 19 years mastering the work through thousands of patients and thousands of X-rays."}
             </p>
             <p>
-              In 2025, she took the leap. Top Atlas Chiropractic was born: her own solo practice, her own vision, her own way. A place where every patient gets the time, attention, and precision they deserve.
+              In 2025, she opened Top Atlas Chiropractic, a solo practice built around time, attention, and precision for every patient.
             </p>
           </div>
         </div>
@@ -85,13 +85,13 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-[#6B7A70] leading-relaxed text-left">
                 <p>
-                  {"Dr. Shelley has been a fitness instructor at The Lagree Studio in Austin for over seven years. She practices what she preaches: alignment isn't just spinal, it's how you move through life."}
+                  {"Dr. Shelley has taught at The Lagree Studio in Austin for more than seven years. She practices what she teaches: alignment shapes how you move through life."}
                 </p>
                 <p>
-                  {"At home, you'll find her yellow lab Arjen (named, yes, after a Dutch footballer), 16 chickens with more personality than most people, and 3 ducks who answer to nobody."}
+                  {"At home, you'll find her yellow lab Arjen, 16 chickens with plenty of personality, and 3 ducks who answer to no one."}
                 </p>
                 <p>
-                  {"She runs Austin's trails, teaches strength with precision, and spends her professional life keeping athletes performing, runners on the road, and everyday people out of pain. If your body has been telling you something is off but nobody can find it, Dr. Shelley might be the one who finally listens."}
+                  {"She runs Austin trails, teaches strength with precision, and helps athletes and everyday patients stay active and out of pain. If your body has been telling you something is off, Dr. Shelley may be the one who finally listens."}
                 </p>
               </div>
             </div>
@@ -113,16 +113,16 @@ export default function AboutPage() {
       <section className="bg-[#1B3A2E] py-20" data-animate>
         <div className="site-shell max-w-2xl text-center">
           <h2 className="font-[var(--font-cormorant)] text-3xl sm:text-4xl font-light text-white mb-4">
-            {"Ready to Meet Dr. Shelley?"}
+            Ready to Meet Shelley?
           </h2>
           <p className="copy-on-dark-sm mx-auto mb-8 max-w-xl">
-            Your first visit is 90 minutes of focused, personalized care. X-rays, analysis, and your first gentle NUCCA adjustment.
+            Your first visit includes 90 minutes of focused care, X-rays, analysis, and your first gentle NUCCA adjustment.
           </p>
           <Link
             href="/new-patient"
             className="btn-primary w-full sm:w-auto"
           >
-            Book Your First Visit
+            Book a Visit
           </Link>
         </div>
       </section>

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const CONDITIONS = [
   {
-    name: "Chronic Headaches",
+    name: "Headaches",
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <circle cx="12" cy="8" r="5" />
@@ -14,7 +14,7 @@ const CONDITIONS = [
     ),
   },
   {
-    name: "Migraines",
+    name: "Migraine",
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" strokeLinecap="round" strokeLinejoin="round" />
@@ -22,7 +22,7 @@ const CONDITIONS = [
     ),
   },
   {
-    name: "Vertigo & Dizziness",
+    name: "Vertigo",
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <circle cx="12" cy="12" r="9" />
@@ -41,7 +41,7 @@ const CONDITIONS = [
     ),
   },
   {
-    name: "Sports Injuries",
+    name: "Sports Injury",
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <circle cx="12" cy="5" r="3" />
@@ -50,7 +50,7 @@ const CONDITIONS = [
     ),
   },
   {
-    name: "Concussion Recovery",
+    name: "Concussion",
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <circle cx="12" cy="10" r="7" />
@@ -60,7 +60,7 @@ const CONDITIONS = [
     ),
   },
   {
-    name: "Sleep Disruption",
+    name: "Sleep Issues",
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
@@ -68,7 +68,7 @@ const CONDITIONS = [
     ),
   },
   {
-    name: "TMJ Disorders",
+    name: "TMJ",
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <circle cx="12" cy="8" r="5" />
@@ -78,7 +78,7 @@ const CONDITIONS = [
     ),
   },
   {
-    name: "Whole-Body Tension",
+    name: "Body Tension",
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <circle cx="12" cy="4" r="2" />
@@ -97,7 +97,7 @@ export function ConditionsGrid() {
             What Brings You Here?
           </p>
           <h2 className="section-title">
-            Conditions We Address
+            What We Help
           </h2>
         </div>
 
@@ -124,7 +124,7 @@ export function ConditionsGrid() {
             href="/conditions"
             className="btn-link"
           >
-            See every condition we address
+            See all conditions
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>

@@ -7,7 +7,7 @@ const NAV_LINKS = [
   { label: "About", href: "/about" },
   { label: "Conditions", href: "/conditions" },
   { label: "NUCCA", href: "/nucca" },
-  { label: "New Patient", href: "/new-patient" },
+  { label: "First Visit", href: "/new-patient" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -70,7 +70,7 @@ export function Navbar() {
               href="/new-patient"
               className="btn-primary px-6 tracking-wide"
             >
-              Book Your First Visit
+              Book a Visit
             </Link>
           </div>
 
@@ -123,7 +123,7 @@ export function Navbar() {
               onClick={() => setMobileOpen(false)}
               className="btn-primary mt-3 w-full max-w-sm px-8 text-base"
             >
-              Book Your First Visit
+              Book a Visit
             </Link>
           </div>
         </div>

@@ -11,65 +11,65 @@ const CONDITIONS = [
   {
     name: "Chronic Headaches",
     description:
-      "When the atlas is misaligned, it creates tension in the muscles and fascia at the base of the skull. That tension refers pain upward, creating headaches that no amount of ibuprofen fully resolves. NUCCA addresses the structural cause, not the symptom.",
+      "When the atlas is misaligned, it can create tension in the muscles and fascia at the base of the skull. That tension can refer pain upward and drive headaches that ibuprofen never fully solves. NUCCA targets the structural cause, not just the symptom.",
     detail:
-      "Patients who've lived with daily or weekly headaches for years often report significant reduction after their first correction. The headache doesn't just go away temporarily. The structural cause is addressed, and many patients find they stay headache-free as long as their atlas holds alignment.",
+      "Patients with daily or weekly headaches often report meaningful relief after their first correction. The goal is not short-term relief, but lasting change while the atlas holds alignment.",
   },
   {
     name: "Migraines",
     description:
-      "Atlas misalignment can compress the brainstem, disrupting the neurological signaling that regulates blood flow, pain perception, and sensory processing. For many migraine sufferers, this compression is the hidden trigger that no medication addresses.",
+      "Atlas misalignment can compress the brainstem and disrupt the signaling that helps regulate blood flow, pain, and sensory processing. For some migraine patients, that compression is the hidden trigger medication never addresses.",
     detail:
-      "Research has shown that NUCCA corrections can reduce migraine frequency, duration, and severity. Some patients experience relief after a single visit. For others, it's a gradual process as the body recalibrates. Either way, addressing the atlas offers something medication cannot: a structural solution.",
+      "Research suggests NUCCA corrections can reduce migraine frequency, duration, and severity. Some patients feel relief quickly. For others, improvement builds as the body recalibrates. Either way, the atlas offers a structural angle medication does not.",
   },
   {
     name: "Vertigo & Dizziness",
     description:
-      "The atlas sits millimeters from the vestibular system, the inner ear structures that control balance. A misaligned atlas can distort the signals between your inner ear and brain, creating the sensation that the world is spinning.",
+      "The atlas sits millimeters from the vestibular system that helps control balance. A misaligned atlas can distort the signals between your inner ear and brain and create the sense that the room is spinning.",
     detail:
-      "Patients often report 40-60% improvement in vertigo symptoms within weeks of their first NUCCA adjustment. For conditions like cervicogenic vertigo and some forms of Meniere's disease, atlas correction can be the intervention that finally provides relief after years of unsuccessful treatments.",
+      "Patients often report meaningful improvement within weeks of their first NUCCA adjustment. For cervicogenic vertigo and some cases of Meniere's disease, atlas correction can provide relief after years of stalled treatment.",
   },
   {
     name: "Neck Pain",
     description:
-      "When the atlas shifts, the muscles in your neck work overtime to compensate. They tighten, spasm, and create chronic pain patterns that massage, stretching, and even traditional chiropractic may only temporarily relieve.",
+      "When the atlas shifts, the muscles in your neck work overtime to compensate. They tighten, spasm, and create pain that massage, stretching, and even traditional chiropractic may only ease for a while.",
     detail:
-      "NUCCA doesn't force your neck into position. It corrects the underlying atlas misalignment and allows your muscles to relax naturally. Patients frequently describe the feeling as 'my neck finally let go.' The correction enables your body to do what it's designed to do: balance itself.",
+      "NUCCA does not force your neck into place. It corrects the underlying atlas misalignment and lets your muscles relax naturally. Patients often describe it as their neck finally letting go.",
   },
   {
     name: "Sports Injuries",
     description:
-      "Impact sports, falls, and repetitive athletic movements can shift the atlas out of alignment. When the foundation of the spine is off, the entire body compensates: shoulders rotate, hips shift, knees track unevenly. Injuries become chronic because the root cause is structural.",
+      "Impact sports, falls, and repetitive movement can shift the atlas out of alignment. When the spine's foundation is off, the whole body compensates: shoulders rotate, hips shift, and knees track unevenly. Injuries become chronic because the root cause is structural.",
     detail:
-      "Dr. Shelley works with runners, cyclists, martial artists, and weekend warriors who've tried everything. When performance plateaus or pain persists despite rehab, atlas alignment is often the missing piece. Athletes report improved range of motion, faster recovery, and renewed performance after NUCCA care.",
+      "Dr. Shelley works with runners, cyclists, martial artists, and weekend warriors. When performance stalls or pain lingers despite rehab, atlas alignment is often the missing piece. Athletes often report better range of motion, faster recovery, and stronger performance after NUCCA care.",
   },
   {
     name: "Concussion Recovery",
     description:
-      "The same impact that causes a concussion often shifts the atlas vertebra. Post-concussion symptoms, including persistent headaches, brain fog, light sensitivity, and difficulty concentrating, may partly stem from atlas-related brainstem compression.",
+      "The same impact that causes a concussion often shifts the atlas. Post-concussion symptoms like persistent headaches, brain fog, light sensitivity, and poor concentration may partly stem from atlas-related brainstem compression.",
     detail:
-      "NUCCA provides a gentle, non-invasive approach to concussion recovery that complements neurological care. By ensuring the atlas is properly aligned, nerve signal transmission between the brain and body can improve, potentially accelerating recovery timelines and reducing persistent symptoms.",
+      "NUCCA offers a gentle, non-invasive approach that can complement neurological care. When the atlas is aligned, communication between the brain and body may improve and help ease lingering symptoms.",
   },
   {
     name: "Sleep Disruption",
     description:
-      "Atlas misalignment can interfere with the autonomic nervous system, disrupting your body's ability to downregulate into restful sleep. Patients with atlas issues often report waking unrested, difficulty falling asleep, or frequent nighttime waking.",
+      "Atlas misalignment can interfere with the autonomic nervous system and make it harder for your body to settle into restful sleep. Patients often report waking unrested, struggling to fall asleep, or waking repeatedly through the night.",
     detail:
-      "When the atlas is corrected, many patients report improved sleep quality within the first week. The body's nervous system can finally shift from a state of constant compensation into genuine rest. Sleep improves not because of a supplement, but because the structural interference is removed.",
+      "After the atlas is corrected, many patients report better sleep within the first week. The nervous system can shift out of constant compensation and into real rest.",
   },
   {
     name: "TMJ Disorders",
     description:
-      "The temporomandibular joint is directly connected to the upper cervical spine through shared musculature and nerve pathways. Atlas misalignment can create jaw tension, clicking, locking, and pain that dental interventions alone cannot resolve.",
+      "The temporomandibular joint connects closely to the upper cervical spine through shared muscles and nerve pathways. Atlas misalignment can create jaw tension, clicking, locking, and pain that dental care alone may not resolve.",
     detail:
-      "Many TMJ patients have been through night guards, dental adjustments, and injections before discovering that the root cause may be cervical. A properly aligned atlas allows the jaw musculature to release. Patients often notice reduced clenching and jaw pain within their first few NUCCA visits.",
+      "Many TMJ patients try night guards, dental adjustments, and injections before learning the root cause may be cervical. A properly aligned atlas can let the jaw muscles release, with less clenching and pain in the first few visits.",
   },
   {
     name: "Whole-Body Tension",
     description:
-      "When the atlas is off, the body compensates from head to toe. One shoulder rises. The opposite hip drops. Muscles throughout the body tighten to maintain balance against a tilted foundation. The result is chronic, full-body tension that no single treatment resolves.",
+      "When the atlas is off, the body compensates from head to toe. One shoulder rises. The opposite hip drops. Muscles throughout the body tighten to balance a tilted foundation. The result is chronic tension that no single treatment fully resolves.",
     detail:
-      "NUCCA is sometimes described as 'the domino effect in reverse.' One precise correction at the top allows the entire chain below to unwind. Patients often report improvements in areas they didn't expect: lower back pain easing, knee pain resolving, posture straightening, all from a single correction to the atlas.",
+      "NUCCA is sometimes described as the domino effect in reverse. One precise correction at the top can let the whole chain below unwind. Patients often notice relief in places they did not expect, from posture to lower back and knee pain.",
   },
 ];
 
@@ -94,7 +94,7 @@ export default function ConditionsPage() {
             to Everything
           </h1>
           <p className="copy-on-dark mx-auto">
-            {"The atlas vertebra sits at the intersection of your skull, brainstem, and spine. When it's misaligned, the effects cascade throughout your entire body. Here's how NUCCA addresses each condition at its structural root."}
+            {"The atlas sits where your skull, brainstem, and spine meet. When it is misaligned, the effects can ripple through the body. Here is how NUCCA addresses common symptoms at the structural level."}
           </p>
         </div>
       </section>
@@ -136,16 +136,16 @@ export default function ConditionsPage() {
       <section className="bg-[#1B3A2E] py-20" data-animate>
         <div className="site-shell max-w-2xl text-center">
           <h2 className="font-[var(--font-cormorant)] text-3xl sm:text-4xl font-light text-white mb-4">
-            Recognize Your Symptoms?
+            See Yourself Here?
           </h2>
           <p className="copy-on-dark-sm mx-auto mb-8 max-w-xl">
-            {"If you've been living with any of these conditions and haven't found lasting relief, your atlas may be the missing piece. Dr. Shelley has spent 19 years helping patients just like you."}
+            {"If any of these sound familiar and lasting relief has been hard to find, your atlas may be the missing piece. Dr. Shelley has spent 19 years helping patients with symptoms like these."}
           </p>
           <Link
             href="/new-patient"
             className="btn-primary w-full sm:w-auto"
           >
-            Find Out if NUCCA Can Help You
+            See If It Fits
           </Link>
         </div>
       </section>

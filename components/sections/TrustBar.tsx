@@ -1,8 +1,8 @@
 export function TrustBar() {
   const items = [
-    "19 Years NUCCA Experience",
-    "Palmer College Graduate",
-    "NUCCA Board Certified",
+    "19 Years in NUCCA",
+    "Palmer Graduate",
+    "Board Certified",
     "Lagree Fitness Instructor",
   ];
 

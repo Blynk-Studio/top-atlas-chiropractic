@@ -25,10 +25,10 @@ export default function ContactPage() {
             Get in Touch
           </p>
           <h1 className="mx-auto mb-6 max-w-4xl font-[var(--font-cormorant)] text-[clamp(2.4rem,6vw,4.5rem)] font-light leading-[1.02] text-white">
-            Start Your Alignment Journey
+            Start Here
           </h1>
           <p className="copy-on-dark mx-auto">
-            Ask a question now, or open a direct email draft to Dr. Shelley. If you&apos;re deciding whether NUCCA is the right fit, this page should get you to the next step quickly.
+            Ask a question now or open a direct email draft to Dr. Shelley. If you&apos;re deciding whether NUCCA is a fit, this page gets you to the next step fast.
           </p>
         </div>
       </section>
@@ -43,10 +43,10 @@ export default function ContactPage() {
                 Instant Help
               </p>
               <h2 className="mb-4 font-[var(--font-cormorant)] text-2xl font-light leading-tight text-[#1C2B24] sm:text-3xl">
-                Ask Dr. Shelley&apos;s Assistant
+                Ask the Assistant
               </h2>
               <p className="copy-muted-sm mb-6 max-w-xl">
-                Best for quick questions about symptoms, NUCCA, pricing, or what happens at your first visit.
+                Best for quick questions about symptoms, NUCCA, pricing, or your first visit.
               </p>
               <AIWidgetPanel variant="inline" />
             </div>
@@ -57,10 +57,10 @@ export default function ContactPage() {
                 Send a Message
               </p>
               <h2 className="mb-4 font-[var(--font-cormorant)] text-2xl font-light leading-tight text-[#1C2B24] sm:text-3xl">
-                Reach Out Directly
+                Email Dr. Shelley
               </h2>
               <p className="copy-muted-sm mb-6 max-w-xl">
-                Prefer email? The form below opens a pre-filled draft addressed to Dr. Shelley so you stay in control of what gets sent.
+                Prefer email? The form below opens a pre-filled draft so you stay in control of what gets sent.
               </p>
               <ContactForm />
             </div>

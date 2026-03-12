@@ -27,13 +27,13 @@ export function ContactForm() {
           </svg>
         </div>
         <h3 className="font-[var(--font-cormorant)] text-xl font-medium text-[#1C2B24] mb-2">
-          Your Email Draft Should Be Open
+          Your Draft Is Ready
         </h3>
         <p className="copy-muted-sm mx-auto mb-5 max-w-md">
-          This site currently hands your message off to your email app so nothing disappears into a form. If the draft did not open, send it manually or use the direct email link below.
+          We open your email app so your message never disappears into a form. If the draft did not open, use the button below or email Dr. Shelley directly.
         </p>
         <a href={mailtoHref} className="btn-primary w-full sm:w-auto">
-          Open Email Draft Again
+          Open Draft Again
         </a>
         <p className="mt-4 text-sm text-[#6B7A70]">
           Or email <a href="mailto:drshelley@topatlaschiropractic.com" className="font-medium text-[#C4813A]">drshelley@topatlaschiropractic.com</a>.
@@ -46,7 +46,7 @@ export function ContactForm() {
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
         <label htmlFor="contact-name" className="block text-xs uppercase tracking-[0.1em] text-[#6B7A70] mb-1.5 font-medium">
-          Your Name
+          Name
         </label>
         <input
           id="contact-name"
@@ -60,7 +60,7 @@ export function ContactForm() {
       </div>
       <div>
         <label htmlFor="contact-email" className="block text-xs uppercase tracking-[0.1em] text-[#6B7A70] mb-1.5 font-medium">
-          Email Address
+          Email
         </label>
         <input
           id="contact-email"
@@ -74,7 +74,7 @@ export function ContactForm() {
       </div>
       <div>
         <label htmlFor="contact-message" className="block text-xs uppercase tracking-[0.1em] text-[#6B7A70] mb-1.5 font-medium">
-          Your Message
+          Message
         </label>
         <textarea
           id="contact-message"
@@ -86,13 +86,13 @@ export function ContactForm() {
         />
       </div>
       <p className="copy-muted-sm">
-        Clicking submit opens a pre-filled email draft addressed to Dr. Shelley.
+        Submit opens a pre-filled email to Dr. Shelley.
       </p>
       <button
         type="submit"
         className="btn-primary w-full"
       >
-        Open Email Draft
+        Open Draft
       </button>
     </form>
   );

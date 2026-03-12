@@ -43,7 +43,7 @@ export function TestimonialsSection() {
           </p>
           <h2 className="section-title">{"They Tried Everything Else First"}</h2>
           <p className="copy-muted-sm mx-auto mt-4 max-w-xl">
-            {"Most NUCCA patients arrive after years of searching for answers. Here's what happened when they found theirs."}
+            {"Most patients arrive after years of chasing answers. Here's what changed when they found NUCCA."}
           </p>
         </div>
 

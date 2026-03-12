@@ -10,7 +10,7 @@ export function AIAssistantSection() {
           </p>
           <h2 className="section-title mb-4">{"Questions at 2am?"}</h2>
           <p className="copy-muted-sm mx-auto max-w-lg">
-            {"Dr. Shelley's AI assistant can answer your questions about NUCCA care, walk you through what to expect, or help you decide if upper cervical chiropractic is right for you."}
+            {"Dr. Shelley's AI assistant can answer questions about NUCCA care, explain what to expect, and help you decide if it's a fit."}
           </p>
         </div>
         <div className="mx-auto max-w-md">

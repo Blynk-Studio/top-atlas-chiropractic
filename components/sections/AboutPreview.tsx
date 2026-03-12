@@ -33,24 +33,24 @@ export function AboutPreview() {
             </p>
             <h2 className="section-title mb-6 text-left">
               From Wisconsin to Austin.<br />
-              From Palmer to your C1 vertebra.
+              From Palmer to C1.
             </h2>
             <div className="space-y-4 text-left">
               <p className="copy-muted">
-                Raised in Colfax, Wisconsin, a town with more cows than people and not a single stop sign, Dr. Shelley Lorenzen was a three-sport athlete who understood her body as an instrument. Biology at UW-La Crosse. Chiropractic doctorate at Palmer College in Davenport, Iowa.
+                Raised in tiny Colfax, Wisconsin, Dr. Shelley Lorenzen was a three-sport athlete who learned to respect how the body works. She studied biology at UW-La Crosse, then earned her chiropractic doctorate at Palmer College in Davenport.
               </p>
               <p className="copy-muted">
-                Then, at a 2003 conference in Chicago, she discovered NUCCA, the most precise chiropractic technique in existence. Everything changed. She moved to Austin in 2006, spent 19 years perfecting the art, and in 2025 launched her own solo practice: Top Atlas Chiropractic.
+                At a 2003 conference in Chicago, she discovered NUCCA. It changed her path. She moved to Austin in 2006, spent 19 years refining the work, and opened Top Atlas Chiropractic in 2025.
               </p>
               <p className="copy-muted">
-                {"When she's not in the office, she's instructing Lagree fitness classes, running Austin's trails, or at home with Arjen (her yellow lab), 16 chickens, and 3 ducks."}
+                {"Outside the office, she teaches Lagree, runs Austin trails, and goes home to Arjen, 16 chickens, and 3 ducks."}
               </p>
             </div>
             <Link
               href="/about"
               className="btn-primary mt-8"
             >
-              {"Read Dr. Shelley's Full Story"}
+              Read Her Story
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>

@@ -1,8 +1,8 @@
 const STATS = [
-  { value: 19, label: "Years Practicing NUCCA", suffix: "" },
-  { value: 7, label: "Years as Lagree Instructor", suffix: "+" },
-  { value: 575, label: "New Patient Investment", prefix: "$" },
-  { value: 0, label: "Procedures Involving Cracking", suffix: "", displayAs: "Zero" },
+  { value: 19, label: "Years in NUCCA", suffix: "" },
+  { value: 7, label: "Years Teaching Lagree", suffix: "+" },
+  { value: 575, label: "First Visit", prefix: "$" },
+  { value: 0, label: "Cracking or Twisting", suffix: "", displayAs: "Zero" },
 ];
 
 export function StatsSection() {

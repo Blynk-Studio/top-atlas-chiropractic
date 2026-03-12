@@ -11,23 +11,23 @@ export const metadata: Metadata = {
 const FAQ_ITEMS = [
   {
     q: "What should I wear to my first visit?",
-    a: "Comfortable clothing that allows you to lie on your side. Avoid heavy necklaces or earrings that could interfere with X-ray imaging. If you have previous imaging (MRI, CT, X-rays), bring them or have them sent ahead of time.",
+    a: "Wear comfortable clothing that lets you lie on your side. Avoid heavy necklaces or earrings that could interfere with X-rays. If you have prior imaging, bring it or send it ahead of time.",
   },
   {
     q: "Will I feel different after my first adjustment?",
-    a: "Many patients feel immediate lightness, improved range of motion, or a sense of relaxation. Some experience mild soreness as the body begins to shift into its new alignment. Both responses are normal and expected.",
+    a: "Many patients notice lightness, better range of motion, or a sense of relaxation. Some feel mild soreness as the body settles into its new alignment. Both are normal.",
   },
   {
     q: "Do you work with medical doctors?",
-    a: "Absolutely. NUCCA complements traditional medical care. Dr. Shelley often works alongside neurologists, orthopedists, and physical therapists to provide comprehensive care. If you have a referring physician, she's happy to coordinate with them.",
+    a: "Yes. NUCCA complements traditional medical care. Dr. Shelley often works alongside neurologists, orthopedists, and physical therapists, and she is happy to coordinate with your referring physician.",
   },
   {
     q: "Can I use my HSA or FSA?",
-    a: "Yes. Chiropractic care is an eligible expense under most Health Savings Accounts and Flexible Spending Accounts. You'll receive a superbill after each visit that you can submit to your HSA/FSA provider for reimbursement.",
+    a: "Yes. Chiropractic care is usually HSA/FSA eligible. You will receive a superbill after each visit to submit for reimbursement.",
   },
   {
     q: "What if I've had a bad experience with chiropractic before?",
-    a: "NUCCA is fundamentally different from traditional chiropractic. There is no cracking, twisting, or forceful manipulation. If your previous experience left you wary, you're not alone. Many of Dr. Shelley's patients came to NUCCA specifically because they wanted a gentler approach.",
+    a: "NUCCA is fundamentally different from traditional chiropractic. There is no cracking, twisting, or forceful manipulation. If a past experience left you wary, you are not alone. Many of Dr. Shelley's patients came to NUCCA because they wanted a gentler approach.",
   },
 ];
 
@@ -48,7 +48,7 @@ export default function NewPatientPage() {
             Change Everything
           </h1>
           <p className="copy-on-dark mx-auto">
-            {"Your first visit is not a rush job. It's a 90-minute, comprehensive assessment designed to understand your unique anatomy, identify atlas misalignment, and deliver your first precision NUCCA correction."}
+            {"Your first visit is a 90-minute assessment built to understand your anatomy, identify atlas misalignment, and deliver your first precision NUCCA correction."}
           </p>
         </div>
       </section>
@@ -61,7 +61,7 @@ export default function NewPatientPage() {
               What to Expect
             </h2>
             <p className="text-[#6B7A70] max-w-lg mx-auto">
-              Every step is designed to ensure precision, comfort, and results.
+              Every step is designed for precision, comfort, and clarity.
             </p>
           </div>
 
@@ -70,27 +70,27 @@ export default function NewPatientPage() {
               {
                 time: "Minutes 1-20",
                 title: "Health History & Consultation",
-                desc: "Dr. Shelley wants to understand your story. Not just your symptoms, but your history, your lifestyle, what you've tried, and what hasn't worked. This conversation shapes everything that follows.",
+                desc: "Dr. Shelley starts with your story: symptoms, health history, lifestyle, what you have tried, and what still is not working. That conversation guides everything that follows.",
               },
               {
                 time: "Minutes 20-40",
                 title: "Specialized X-Ray Analysis",
-                desc: "Precision X-rays taken from specific angles reveal the exact position and rotation of your atlas vertebra. These images are not standard chiropractic X-rays. They're engineered for NUCCA analysis.",
+                desc: "Precision X-rays from specific angles reveal the exact position and rotation of your atlas. These are not standard chiropractic X-rays. They are built for NUCCA analysis.",
               },
               {
                 time: "Minutes 40-55",
                 title: "Analysis & Correction Calculation",
-                desc: "Using your X-ray data, Dr. Shelley calculates the precise vector, angle, and force needed for your correction. This is the engineering phase: your adjustment is mathematically customized to your anatomy.",
+                desc: "Using your X-rays, Dr. Shelley calculates the exact vector, angle, and force for your correction. Your adjustment is mathematically tailored to your anatomy.",
               },
               {
                 time: "Minutes 55-70",
                 title: "Your First NUCCA Adjustment",
-                desc: "You lie on your side on a specialized table. Dr. Shelley applies a gentle, sustained touch behind your ear. No cracking. No twisting. The entire correction takes seconds, but the preparation behind it took 19 years.",
+                desc: "You lie on your side on a specialized table while Dr. Shelley applies a gentle touch behind your ear. No cracking. No twisting. The correction takes seconds.",
               },
               {
                 time: "Minutes 70-90",
                 title: "Post-Adjustment X-Rays & Review",
-                desc: "Immediately after adjustment, follow-up X-rays confirm the structural change. Dr. Shelley reviews your before-and-after images with you, explains what changed, and discusses your personalized care plan going forward.",
+                desc: "Follow-up X-rays confirm the structural change. Dr. Shelley reviews your before-and-after images, explains what changed, and outlines your care plan.",
               },
             ].map((step, i) => (
               <div
@@ -128,10 +128,10 @@ export default function NewPatientPage() {
               Your Investment
             </p>
             <h2 className="font-[var(--font-cormorant)] text-3xl sm:text-4xl font-light text-white mb-4">
-              Transparent, Straightforward Pricing
+              Clear Pricing
             </h2>
             <p className="copy-on-dark-sm mx-auto max-w-lg">
-              Top Atlas Chiropractic is a cash-only practice. No insurance middlemen. No surprise bills. Just focused, uncompromised care.
+              Top Atlas Chiropractic is cash-only. No insurance middlemen. No surprise bills. Just focused care.
             </p>
           </div>
 
@@ -150,11 +150,11 @@ export default function NewPatientPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#C4813A] mt-0.5">&#10003;</span>
-                  Specialized X-ray analysis
+                  Specialized X-rays
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#C4813A] mt-0.5">&#10003;</span>
-                  Custom correction calculation
+                  Custom correction
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#C4813A] mt-0.5">&#10003;</span>
@@ -162,7 +162,7 @@ export default function NewPatientPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#C4813A] mt-0.5">&#10003;</span>
-                  Post-adjustment imaging & review
+                  Post-adjustment review
                 </li>
               </ul>
             </div>
@@ -176,7 +176,7 @@ export default function NewPatientPage() {
               <ul className="space-y-2 text-sm text-white/75 text-left">
                 <li className="flex items-start gap-2">
                   <span className="text-[#C4813A] mt-0.5">&#10003;</span>
-                  30-minute focused visit
+                  30-minute visit
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#C4813A] mt-0.5">&#10003;</span>
@@ -188,7 +188,7 @@ export default function NewPatientPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#C4813A] mt-0.5">&#10003;</span>
-                  Progress assessment
+                  Progress check
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#C4813A] mt-0.5">&#10003;</span>
@@ -199,7 +199,7 @@ export default function NewPatientPage() {
           </div>
 
           <p className="text-center text-sm text-white/40 mt-8">
-            HSA and FSA accepted. Superbill provided for reimbursement.
+            HSA/FSA accepted. Superbill provided.
           </p>
         </div>
       </section>
@@ -212,13 +212,13 @@ export default function NewPatientPage() {
           </h2>
           <div className="space-y-4 text-[#6B7A70] leading-relaxed text-left">
             <p>
-              {'Insurance companies decide how many visits you get, how long each visit lasts, and which X-rays are "medically necessary." They optimize for cost, not for outcomes.'}
+              {'Insurance companies decide how many visits you get, how long they last, and which X-rays are "medically necessary." They optimize for cost, not outcomes.'}
             </p>
             <p>
-              {"At Top Atlas Chiropractic, Dr. Shelley decides what you need based on your anatomy, your symptoms, and your goals. Your first visit is 90 minutes, because that's what proper NUCCA evaluation requires. No insurance company would approve that."}
+              {"At Top Atlas Chiropractic, Dr. Shelley decides what you need based on your anatomy, symptoms, and goals. Your first visit is 90 minutes because proper NUCCA evaluation takes time."}
             </p>
             <p>
-              Cash-only practice means: no denied claims, no surprise bills, no treatment limitations, no pre-authorization delays. Just the care you need, when you need it, for exactly as long as it takes.
+              Cash-only care means no denied claims, surprise bills, treatment limits, or pre-authorization delays. Just the care you need, when you need it.
             </p>
           </div>
         </div>
@@ -232,7 +232,7 @@ export default function NewPatientPage() {
               Questions Before Your Visit
             </p>
             <h2 className="font-[var(--font-cormorant)] text-3xl sm:text-4xl font-light text-[#1C2B24]">
-              New Patient FAQ
+              First Visit FAQ
             </h2>
           </div>
           <div className="space-y-6">
@@ -260,20 +260,20 @@ export default function NewPatientPage() {
             Your Atlas is Waiting
           </h2>
           <p className="copy-on-dark-sm mx-auto mb-8 max-w-xl">
-            19 years of expertise. 90 minutes of focused attention. One precise correction that could change everything.
+            19 years of expertise. 90 minutes of focused care. One precise correction that could change everything.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="mailto:drshelley@topatlaschiropractic.com"
               className="btn-primary w-full sm:w-auto"
             >
-              Email Dr. Shelley to Book
+              Email to Book
             </a>
             <Link
               href="/contact"
               className="btn-secondary-dark w-full sm:w-auto"
             >
-              More Ways to Reach Us
+              Contact Options
             </Link>
           </div>
         </div>
